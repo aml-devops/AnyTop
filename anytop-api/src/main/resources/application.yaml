@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: bb-eload-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/eload_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+      format_sql: true
+ 
+eload:
+  queue:
+    topup: TOPUP_QUEUE
+  username: root
+  password: root
+  ussd-gateway: http://74.50.215.50/goip_send_ussd.html?
+  get-status: http://74.50.215.50/goip_get_status.html?
+  send-cmd: http://74.50.215.50/goip_send_cmd.html?
+  post-sms: http://74.50.215.50/goip_post_sms?
+
+logging:
+  level:
+    com.bytebridges.eload: INFO
+  file:
+    name: logs/eload.log
