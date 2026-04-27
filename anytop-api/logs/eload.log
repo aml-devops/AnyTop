@@ -1,423 +1,419 @@
-2026-04-25T10:16:18.380+06:30  INFO 20436 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : Starting BbEloadApiApplication using Java 21.0.9 with PID 20436 (D:\eagleplatform\projects\bb-eload-api\target\classes started by Lenovo in D:\eagleplatform\projects\bb-eload-api)
-2026-04-25T10:16:18.391+06:30  INFO 20436 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : No active profile set, falling back to 1 default profile: "default"
-2026-04-25T10:16:19.401+06:30  INFO 20436 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-25T10:16:19.461+06:30  INFO 20436 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
-2026-04-25T10:16:20.051+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-04-25T10:16:20.076+06:30  INFO 20436 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-25T10:16:20.080+06:30  INFO 20436 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-25T10:16:20.143+06:30  INFO 20436 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1676 ms
-2026-04-25T10:16:20.380+06:30  INFO 20436 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-04-25T10:16:20.453+06:30  INFO 20436 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
-2026-04-25T10:16:21.021+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-25T10:16:21.050+06:30  INFO 20436 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-25T10:16:21.355+06:30  INFO 20436 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@434d001d
-2026-04-25T10:16:21.359+06:30  INFO 20436 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-25T10:16:21.438+06:30  INFO 20436 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/eload_db]
+2026-04-27T21:42:06.605+06:30  INFO 8132 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 8132 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-04-27T21:42:06.620+06:30  INFO 8132 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-27T21:42:08.096+06:30  INFO 8132 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-27T21:42:08.319+06:30  INFO 8132 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 206 ms. Found 2 JPA repository interfaces.
+2026-04-27T21:42:09.101+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-27T21:42:09.126+06:30  INFO 8132 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-27T21:42:09.127+06:30  INFO 8132 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-27T21:42:09.262+06:30  INFO 8132 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2566 ms
+2026-04-27T21:42:09.631+06:30  INFO 8132 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-27T21:42:09.717+06:30  INFO 8132 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-27T21:42:10.389+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-27T21:42:10.428+06:30  INFO 8132 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-27T21:42:10.897+06:30  INFO 8132 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5342032a
+2026-04-27T21:42:10.902+06:30  INFO 8132 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-27T21:42:11.030+06:30  INFO 8132 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
-	Database version: 8.0.45
-	Default catalog/schema: eload_db/undefined
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
 	Autocommit mode: undefined/unknown
 	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
 	JDBC fetch size: none
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-04-25T10:16:22.134+06:30  INFO 20436 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-25T10:16:22.191+06:30  INFO 20436 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-25T10:16:22.279+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-04-25T10:16:23.455+06:30  WARN 20436 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-25T10:16:23.468+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-04-25T10:16:23.968+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-04-25T10:16:23.969+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@41d73414]]
-2026-04-25T10:16:23.970+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-04-25T10:16:23.985+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-04-25T10:16:23.988+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
-2026-04-25T10:16:24.038+06:30  INFO 20436 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#56c278bf:0/SimpleConnection@1e418480 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54242]
-2026-04-25T10:16:24.083+06:30  INFO 20436 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : Started BbEloadApiApplication in 6.202 seconds (process running for 6.643)
-2026-04-25T10:17:23.966+06:30  INFO 20436 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
-2026-04-25T10:20:04.484+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-25T10:20:04.485+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-04-25T10:20:04.487+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-04-25T10:20:05.388+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 532 ms
-2026-04-25T10:21:10.484+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-7] c.b.eload.service.MptTopupService        : 🚀 Create topup | phone=09441331456 | amount=1000.0
-2026-04-25T10:21:10.678+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-7] c.b.eload.messaging.TopupProducer        : 🚀 [PRODUCER] Preparing message | txnId=3 | messageId=68e3077b-e9c8-4540-93f4-428ab075f891 | operator=MPT
-2026-04-25T10:21:10.695+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-7] c.b.eload.messaging.TopupProducer        : 📤 [PRODUCER] Message sent | txnId=3 | messageId=68e3077b-e9c8-4540-93f4-428ab075f891 | queue=TOPUP_QUEUE
-2026-04-25T10:21:10.696+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-7] c.b.eload.service.MptTopupService        : 📤 Sent to queue | txnId=3
-2026-04-25T10:21:10.716+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 📩 [CONSUMER] Message received | txnId=3 | messageId=68e3077b-e9c8-4540-93f4-428ab075f891 | operator=MPT
-2026-04-25T10:21:10.771+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 🔍 [CONSUMER] Transaction loaded | txnId=3 | status=SENT_TO_QUEUE
-2026-04-25T10:21:10.773+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : ⚙️ Process start | txnId=3
-2026-04-25T10:21:10.952+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 📶 SIM selected | simId=1
-2026-04-25T10:21:10.954+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 📡 USSD | sim=MPT-SIM-1 | phone=09441331456 | amount=1000.0
-2026-04-25T10:21:10.954+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : ✅ SUCCESS | txnId=3
-2026-04-25T10:21:10.962+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 🔓 SIM released | simId=1
-2026-04-25T10:21:10.963+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 💾 Transaction saved | txnId=3 | status=SUCCESS
-2026-04-25T10:21:10.977+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 🏁 [CONSUMER] Processing completed | txnId=3 | finalStatus=SUCCESS
-2026-04-25T10:27:09.544+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-6] c.b.eload.service.MptTopupService        : 🚀 Create topup | phone=09441331456 | amount=1000.0
-2026-04-25T10:27:09.569+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-6] c.b.eload.messaging.TopupProducer        : 🚀 [PRODUCER] Preparing message | txnId=4 | messageId=14005ff5-9937-4112-a47e-b16d9a03dc5c | operator=MPT
-2026-04-25T10:27:09.572+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-6] c.b.eload.messaging.TopupProducer        : 📤 [PRODUCER] Message sent | txnId=4 | messageId=14005ff5-9937-4112-a47e-b16d9a03dc5c | queue=TOPUP_QUEUE
-2026-04-25T10:27:09.572+06:30  INFO 20436 --- [bb-eload-api] [http-nio-8080-exec-6] c.b.eload.service.MptTopupService        : 📤 Sent to queue | txnId=4
-2026-04-25T10:27:09.575+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 📩 [CONSUMER] Message received | txnId=4 | messageId=14005ff5-9937-4112-a47e-b16d9a03dc5c | operator=MPT
-2026-04-25T10:27:09.588+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 🔍 [CONSUMER] Transaction loaded | txnId=4 | status=SENT_TO_QUEUE
-2026-04-25T10:27:09.590+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : ⚙️ Process start | txnId=4
-2026-04-25T10:27:09.601+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 📶 SIM selected | simId=1
-2026-04-25T10:27:09.602+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 📡 USSD | sim=MPT-SIM-1 | phone=09441331456 | amount=1000.0
-2026-04-25T10:27:09.602+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : ✅ SUCCESS | txnId=4
-2026-04-25T10:27:09.603+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 🔓 SIM released | simId=1
-2026-04-25T10:27:09.605+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 💾 Transaction saved | txnId=4 | status=SUCCESS
-2026-04-25T10:27:09.614+06:30  INFO 20436 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 🏁 [CONSUMER] Processing completed | txnId=4 | finalStatus=SUCCESS
-2026-04-25T10:53:05.416+06:30  INFO 22028 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : Starting BbEloadApiApplication using Java 21.0.9 with PID 22028 (D:\eagleplatform\projects\bb-eload-api\target\classes started by Lenovo in D:\eagleplatform\projects\bb-eload-api)
-2026-04-25T10:53:05.422+06:30  INFO 22028 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : No active profile set, falling back to 1 default profile: "default"
-2026-04-25T10:53:06.486+06:30  INFO 22028 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-25T10:53:06.587+06:30  INFO 22028 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
-2026-04-25T10:53:07.277+06:30  INFO 22028 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-04-25T10:53:07.296+06:30  INFO 22028 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-25T10:53:07.297+06:30  INFO 22028 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-25T10:53:07.388+06:30  INFO 22028 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1907 ms
-2026-04-25T10:53:07.647+06:30  INFO 22028 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-04-25T10:53:07.727+06:30  INFO 22028 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
-2026-04-25T10:53:08.253+06:30  INFO 22028 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-25T10:53:08.277+06:30  INFO 22028 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-25T10:53:08.610+06:30  INFO 22028 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27b7204
-2026-04-25T10:53:08.613+06:30  INFO 22028 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-25T10:53:08.680+06:30  INFO 22028 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/eload_db]
+2026-04-27T21:42:12.003+06:30  INFO 8132 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-27T21:42:12.077+06:30  INFO 8132 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-27T21:42:12.177+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-27T21:42:14.076+06:30  WARN 8132 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-27T21:42:14.089+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-27T21:42:15.107+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-04-27T21:42:15.108+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@142c0c3e]]
+2026-04-27T21:42:15.109+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-04-27T21:42:15.137+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-27T21:42:15.142+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-27T21:42:15.203+06:30  INFO 8132 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#74d74701:0/SimpleConnection@7538033f [delegate=amqp://guest@127.0.0.1:5672/, localPort=53246]
+2026-04-27T21:42:15.269+06:30  INFO 8132 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 9.956 seconds (process running for 10.96)
+2026-04-27T21:42:31.247+06:30  INFO 8132 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-27T21:42:31.248+06:30  INFO 8132 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-27T21:42:31.251+06:30  INFO 8132 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-27T21:42:32.267+06:30  INFO 8132 --- [bb-eload-api] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 440 ms
+2026-04-27T21:42:59.674+06:30  INFO 8132 --- [bb-eload-api] [http-nio-8080-exec-9] c.b.anytop.service.MptTopupService       : 🚀 Create topup | phone=09441331456 | amount=500
+2026-04-27T21:42:59.842+06:30  INFO 8132 --- [bb-eload-api] [http-nio-8080-exec-9] c.b.anytop.messaging.TopupProducer       : 🚀 [PRODUCER] Preparing message | txnId=4 | messageId=8424a413-4556-4184-a504-2c0c8432e4a3 | operator=MPT
+2026-04-27T21:42:59.872+06:30  INFO 8132 --- [bb-eload-api] [http-nio-8080-exec-9] c.b.anytop.messaging.TopupProducer       : 📤 [PRODUCER] Message sent | txnId=4 | messageId=8424a413-4556-4184-a504-2c0c8432e4a3 | queue=TOPUP_QUEUE
+2026-04-27T21:42:59.873+06:30  INFO 8132 --- [bb-eload-api] [http-nio-8080-exec-9] c.b.anytop.service.MptTopupService       : 📤 Sent to queue | txnId=4
+2026-04-27T21:42:59.898+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 📩 [CONSUMER] Message received | txnId=4 | messageId=8424a413-4556-4184-a504-2c0c8432e4a3 | operator=MPT
+2026-04-27T21:42:59.959+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🔍 [CONSUMER] Transaction loaded | txnId=4 | status=SENT_TO_QUEUE
+2026-04-27T21:42:59.960+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚙️ Process start | txnId=4
+2026-04-27T21:43:00.180+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 📶 SIM selected | simId=1 | port=25A
+2026-04-27T21:43:00.187+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Request | mobile=09441331456 | req=http://192.168.0.252/goip_send_ussd.html?username=root&password=root&port=25A&ussd=*125*500*09441331456*8899%2523
+2026-04-27T21:43:15.086+06:30  INFO 8132 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-04-27T21:44:00.809+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Response | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T21:44:00.810+06:30 ERROR 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 failed | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T21:44:00.811+06:30  WARN 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚠️ FAILED | txnId=4
+2026-04-27T21:44:00.814+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 🔓 SIM released | simId=1
+2026-04-27T21:44:00.815+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 💾 Transaction saved | txnId=4 | status=FAILED
+2026-04-27T21:44:00.826+06:30  INFO 8132 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🏁 [CONSUMER] Processing completed | txnId=4 | finalStatus=FAILED
+2026-04-27T21:57:21.768+06:30  INFO 2692 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 2692 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-04-27T21:57:21.773+06:30  INFO 2692 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-27T21:57:23.188+06:30  INFO 2692 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-27T21:57:23.367+06:30  INFO 2692 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 2 JPA repository interfaces.
+2026-04-27T21:57:24.131+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-27T21:57:24.157+06:30  INFO 2692 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-27T21:57:24.159+06:30  INFO 2692 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-27T21:57:24.277+06:30  INFO 2692 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2417 ms
+2026-04-27T21:57:24.548+06:30  INFO 2692 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-27T21:57:24.631+06:30  INFO 2692 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-27T21:57:25.309+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-27T21:57:25.351+06:30  INFO 2692 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-27T21:57:25.788+06:30  INFO 2692 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3731e8b6
+2026-04-27T21:57:25.791+06:30  INFO 2692 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-27T21:57:25.917+06:30  INFO 2692 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
-	Database version: 8.0.45
-	Default catalog/schema: eload_db/undefined
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
 	Autocommit mode: undefined/unknown
 	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
 	JDBC fetch size: none
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-04-25T10:53:09.332+06:30  INFO 22028 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-25T10:53:09.424+06:30  INFO 22028 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-25T10:53:09.520+06:30  INFO 22028 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-04-25T10:53:10.522+06:30  WARN 22028 --- [bb-eload-api] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mptController' defined in file [D:\eagleplatform\projects\bb-eload-api\target\classes\com\bytebridges\eload\controller\MptController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'mptTopupService' defined in file [D:\eagleplatform\projects\bb-eload-api\target\classes\com\bytebridges\eload\service\MptTopupService.class]: Unsatisfied dependency expressed through constructor parameter 4: No qualifying bean of type 'com.bytebridges.eload.service.ussd.MptTopupUssdService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2026-04-25T10:53:10.530+06:30  INFO 22028 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-04-25T10:53:10.534+06:30  INFO 22028 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-04-25T10:53:10.544+06:30  INFO 22028 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-04-25T10:53:10.547+06:30  INFO 22028 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2026-04-25T10:53:10.557+06:30  INFO 22028 --- [bb-eload-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-04-25T10:53:10.577+06:30 ERROR 22028 --- [bb-eload-api] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 4 of constructor in com.bytebridges.eload.service.MptTopupService required a bean of type 'com.bytebridges.eload.service.ussd.MptTopupUssdService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.bytebridges.eload.service.ussd.MptTopupUssdService' in your configuration.
-
-2026-04-25T10:54:06.578+06:30  INFO 20608 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : Starting BbEloadApiApplication using Java 21.0.9 with PID 20608 (D:\eagleplatform\projects\bb-eload-api\target\classes started by Lenovo in D:\eagleplatform\projects\bb-eload-api)
-2026-04-25T10:54:06.585+06:30  INFO 20608 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : No active profile set, falling back to 1 default profile: "default"
-2026-04-25T10:54:07.543+06:30  INFO 20608 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-25T10:54:07.644+06:30  INFO 20608 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
-2026-04-25T10:54:08.229+06:30  INFO 20608 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-04-25T10:54:08.241+06:30  INFO 20608 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-25T10:54:08.242+06:30  INFO 20608 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-25T10:54:08.304+06:30  INFO 20608 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1657 ms
-2026-04-25T10:54:08.530+06:30  INFO 20608 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-04-25T10:54:08.588+06:30  INFO 20608 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
-2026-04-25T10:54:09.109+06:30  INFO 20608 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-25T10:54:09.133+06:30  INFO 20608 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-25T10:54:09.435+06:30  INFO 20608 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@359fa722
-2026-04-25T10:54:09.437+06:30  INFO 20608 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-25T10:54:09.529+06:30  INFO 20608 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/eload_db]
+2026-04-27T21:57:26.864+06:30  INFO 2692 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-27T21:57:26.937+06:30  INFO 2692 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-27T21:57:27.054+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-27T21:57:28.830+06:30  WARN 2692 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-27T21:57:28.844+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-27T21:57:29.513+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-04-27T21:57:29.515+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72602969]]
+2026-04-27T21:57:29.516+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-04-27T21:57:29.558+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-27T21:57:29.565+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-27T21:57:29.640+06:30  INFO 2692 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6824c2e6:0/SimpleConnection@1c078351 [delegate=amqp://guest@127.0.0.1:5672/, localPort=53312]
+2026-04-27T21:57:29.705+06:30  INFO 2692 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 8.634 seconds (process running for 9.376)
+2026-04-27T21:58:12.796+06:30  INFO 2692 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-27T21:58:12.796+06:30  INFO 2692 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-27T21:58:12.798+06:30  INFO 2692 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-27T21:58:12.878+06:30  INFO 2692 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 🚀 Create topup | phone=09441331456 | amount=500
+2026-04-27T21:58:13.019+06:30  INFO 2692 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 🚀 [PRODUCER] Preparing message | txnId=5 | messageId=bceea238-a6dc-4b42-b00a-61aa313b667f | operator=MPT
+2026-04-27T21:58:13.082+06:30  INFO 2692 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 📤 [PRODUCER] Message sent | txnId=5 | messageId=bceea238-a6dc-4b42-b00a-61aa313b667f | queue=TOPUP_QUEUE
+2026-04-27T21:58:13.082+06:30  INFO 2692 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 📤 Sent to queue | txnId=5
+2026-04-27T21:58:13.129+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 📩 [CONSUMER] Message received | txnId=5 | messageId=bceea238-a6dc-4b42-b00a-61aa313b667f | operator=MPT
+2026-04-27T21:58:13.178+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🔍 [CONSUMER] Transaction loaded | txnId=5 | status=SENT_TO_QUEUE
+2026-04-27T21:58:13.180+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚙️ Process start | txnId=5
+2026-04-27T21:58:13.326+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 📶 SIM selected | simId=1 | port=25A
+2026-04-27T21:58:13.329+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Request | mobile=09441331456 | req=http://192.168.0.252/goip_send_ussd.html?username=root&password=root&port=25A&ussd=*125*500*09441331456*8899%23
+2026-04-27T21:58:29.496+06:30  INFO 2692 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-04-27T21:59:13.893+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Response | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T21:59:13.894+06:30 ERROR 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 failed | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T21:59:13.894+06:30  WARN 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚠️ FAILED | txnId=5
+2026-04-27T21:59:13.898+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 🔓 SIM released | simId=1
+2026-04-27T21:59:13.898+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 💾 Transaction saved | txnId=5 | status=FAILED
+2026-04-27T21:59:13.909+06:30  INFO 2692 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🏁 [CONSUMER] Processing completed | txnId=5 | finalStatus=FAILED
+2026-04-27T22:01:23.135+06:30  INFO 8644 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 8644 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-04-27T22:01:23.141+06:30  INFO 8644 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-27T22:01:24.491+06:30  INFO 8644 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-27T22:01:24.664+06:30  INFO 8644 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161 ms. Found 2 JPA repository interfaces.
+2026-04-27T22:01:25.407+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-27T22:01:25.424+06:30  INFO 8644 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-27T22:01:25.425+06:30  INFO 8644 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-27T22:01:25.524+06:30  INFO 8644 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2303 ms
+2026-04-27T22:01:25.800+06:30  INFO 8644 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-27T22:01:25.891+06:30  INFO 8644 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-27T22:01:26.595+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-27T22:01:26.647+06:30  INFO 8644 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-27T22:01:27.125+06:30  INFO 8644 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@359fa722
+2026-04-27T22:01:27.130+06:30  INFO 8644 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-27T22:01:27.258+06:30  INFO 8644 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
-	Database version: 8.0.45
-	Default catalog/schema: eload_db/undefined
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
 	Autocommit mode: undefined/unknown
 	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
 	JDBC fetch size: none
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-04-25T10:54:10.194+06:30  INFO 20608 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-25T10:54:10.253+06:30  INFO 20608 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-25T10:54:10.342+06:30  INFO 20608 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-04-25T10:54:11.284+06:30  WARN 20608 --- [bb-eload-api] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mptController' defined in file [D:\eagleplatform\projects\bb-eload-api\target\classes\com\bytebridges\eload\controller\MptController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'mptTopupService' defined in file [D:\eagleplatform\projects\bb-eload-api\target\classes\com\bytebridges\eload\service\MptTopupService.class]: Unsatisfied dependency expressed through constructor parameter 4: Error creating bean with name 'mptTopupUssdService' defined in file [D:\eagleplatform\projects\bb-eload-api\target\classes\com\bytebridges\eload\service\ussd\MptTopupUssdService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ussdGatewayClient' defined in file [D:\eagleplatform\projects\bb-eload-api\target\classes\com\bytebridges\eload\service\external\UssdGatewayClient.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.web.reactive.function.client.WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2026-04-25T10:54:11.291+06:30  INFO 20608 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-04-25T10:54:11.295+06:30  INFO 20608 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-04-25T10:54:11.303+06:30  INFO 20608 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-04-25T10:54:11.307+06:30  INFO 20608 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2026-04-25T10:54:11.317+06:30  INFO 20608 --- [bb-eload-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-04-25T10:54:11.339+06:30 ERROR 20608 --- [bb-eload-api] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.bytebridges.eload.service.external.UssdGatewayClient required a bean of type 'org.springframework.web.reactive.function.client.WebClient' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.web.reactive.function.client.WebClient' in your configuration.
-
-2026-04-25T10:55:18.178+06:30  INFO 7072 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : Starting BbEloadApiApplication using Java 21.0.9 with PID 7072 (D:\eagleplatform\projects\bb-eload-api\target\classes started by Lenovo in D:\eagleplatform\projects\bb-eload-api)
-2026-04-25T10:55:18.183+06:30  INFO 7072 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : No active profile set, falling back to 1 default profile: "default"
-2026-04-25T10:55:19.142+06:30  INFO 7072 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-25T10:55:19.244+06:30  INFO 7072 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
-2026-04-25T10:55:19.831+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-04-25T10:55:19.844+06:30  INFO 7072 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-25T10:55:19.845+06:30  INFO 7072 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-25T10:55:19.909+06:30  INFO 7072 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1667 ms
-2026-04-25T10:55:20.116+06:30  INFO 7072 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-04-25T10:55:20.175+06:30  INFO 7072 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
-2026-04-25T10:55:20.672+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-25T10:55:20.698+06:30  INFO 7072 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-25T10:55:20.980+06:30  INFO 7072 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@359fa722
-2026-04-25T10:55:20.982+06:30  INFO 7072 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-25T10:55:21.054+06:30  INFO 7072 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/eload_db]
+2026-04-27T22:01:28.341+06:30  INFO 8644 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-27T22:01:28.411+06:30  INFO 8644 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-27T22:01:28.523+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-27T22:01:30.683+06:30  WARN 8644 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-27T22:01:30.699+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-27T22:01:31.436+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-04-27T22:01:31.438+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72602969]]
+2026-04-27T22:01:31.439+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-04-27T22:01:31.490+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-27T22:01:31.495+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-27T22:01:31.567+06:30  INFO 8644 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#a3a54d6:0/SimpleConnection@1c078351 [delegate=amqp://guest@127.0.0.1:5672/, localPort=53336]
+2026-04-27T22:01:31.631+06:30  INFO 8644 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 9.178 seconds (process running for 9.902)
+2026-04-27T22:01:41.964+06:30  INFO 8644 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-27T22:01:41.965+06:30  INFO 8644 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-27T22:01:41.967+06:30  INFO 8644 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-27T22:01:42.020+06:30  INFO 8644 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 🚀 Create topup | phone=09441331456 | amount=500
+2026-04-27T22:01:42.161+06:30  INFO 8644 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 🚀 [PRODUCER] Preparing message | txnId=6 | messageId=8bfe72e4-316b-408f-b383-34cc6724413d | operator=MPT
+2026-04-27T22:01:42.233+06:30  INFO 8644 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 📤 [PRODUCER] Message sent | txnId=6 | messageId=8bfe72e4-316b-408f-b383-34cc6724413d | queue=TOPUP_QUEUE
+2026-04-27T22:01:42.233+06:30  INFO 8644 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 📤 Sent to queue | txnId=6
+2026-04-27T22:01:42.303+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 📩 [CONSUMER] Message received | txnId=6 | messageId=8bfe72e4-316b-408f-b383-34cc6724413d | operator=MPT
+2026-04-27T22:01:42.351+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🔍 [CONSUMER] Transaction loaded | txnId=6 | status=SENT_TO_QUEUE
+2026-04-27T22:01:42.353+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚙️ Process start | txnId=6
+2026-04-27T22:01:42.515+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 📶 SIM selected | simId=1 | port=25A
+2026-04-27T22:01:42.516+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Request | mobile=09441331456 | req=http://192.168.0.252/goip_send_ussd.html?username=root&password=root&port=25A&ussd=*125*500*09441331456*8899%23
+2026-04-27T22:02:31.416+06:30  INFO 8644 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-04-27T22:02:43.069+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Response | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T22:02:43.070+06:30 ERROR 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 failed | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T22:02:43.070+06:30  WARN 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚠️ FAILED | txnId=6
+2026-04-27T22:02:43.073+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 🔓 SIM released | simId=1
+2026-04-27T22:02:43.074+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 💾 Transaction saved | txnId=6 | status=FAILED
+2026-04-27T22:02:43.093+06:30  INFO 8644 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🏁 [CONSUMER] Processing completed | txnId=6 | finalStatus=FAILED
+2026-04-27T22:08:36.437+06:30  INFO 8416 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 8416 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-04-27T22:08:36.442+06:30  INFO 8416 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-27T22:08:37.837+06:30  INFO 8416 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-27T22:08:38.011+06:30  INFO 8416 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 2 JPA repository interfaces.
+2026-04-27T22:08:38.869+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-27T22:08:38.889+06:30  INFO 8416 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-27T22:08:38.890+06:30  INFO 8416 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-27T22:08:38.996+06:30  INFO 8416 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2469 ms
+2026-04-27T22:08:39.262+06:30  INFO 8416 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-27T22:08:39.346+06:30  INFO 8416 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-27T22:08:39.995+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-27T22:08:40.037+06:30  INFO 8416 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-27T22:08:40.480+06:30  INFO 8416 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3731e8b6
+2026-04-27T22:08:40.482+06:30  INFO 8416 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-27T22:08:40.625+06:30  INFO 8416 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
-	Database version: 8.0.45
-	Default catalog/schema: eload_db/undefined
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
 	Autocommit mode: undefined/unknown
 	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
 	JDBC fetch size: none
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-04-25T10:55:21.675+06:30  INFO 7072 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-25T10:55:21.722+06:30  INFO 7072 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-25T10:55:21.806+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-04-25T10:55:23.099+06:30  WARN 7072 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-25T10:55:23.112+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-04-25T10:55:23.534+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-04-25T10:55:23.535+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72602969]]
-2026-04-25T10:55:23.536+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-04-25T10:55:23.556+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-04-25T10:55:23.558+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
-2026-04-25T10:55:23.592+06:30  INFO 7072 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#335d6f94:0/SimpleConnection@1c078351 [delegate=amqp://guest@127.0.0.1:5672/, localPort=53612]
-2026-04-25T10:55:23.628+06:30  INFO 7072 --- [bb-eload-api] [main] c.b.eload.BbEloadApiApplication          : Started BbEloadApiApplication in 5.875 seconds (process running for 6.317)
-2026-04-25T10:55:42.888+06:30  INFO 7072 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-25T10:55:42.889+06:30  INFO 7072 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-04-25T10:55:42.892+06:30  INFO 7072 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-04-25T10:55:43.847+06:30  INFO 7072 --- [bb-eload-api] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 533 ms
-2026-04-25T10:55:57.450+06:30  INFO 7072 --- [bb-eload-api] [http-nio-8080-exec-5] c.b.eload.service.MptTopupService        : 🚀 Create topup | phone=09441331456 | amount=1000
-2026-04-25T10:55:57.691+06:30  INFO 7072 --- [bb-eload-api] [http-nio-8080-exec-5] c.b.eload.messaging.TopupProducer        : 🚀 [PRODUCER] Preparing message | txnId=5 | messageId=d0752afc-d9be-4884-af52-3ee36a6c7add | operator=MPT
-2026-04-25T10:55:57.743+06:30  INFO 7072 --- [bb-eload-api] [http-nio-8080-exec-5] c.b.eload.messaging.TopupProducer        : 📤 [PRODUCER] Message sent | txnId=5 | messageId=d0752afc-d9be-4884-af52-3ee36a6c7add | queue=TOPUP_QUEUE
-2026-04-25T10:55:57.744+06:30  INFO 7072 --- [bb-eload-api] [http-nio-8080-exec-5] c.b.eload.service.MptTopupService        : 📤 Sent to queue | txnId=5
-2026-04-25T10:55:57.769+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 📩 [CONSUMER] Message received | txnId=5 | messageId=d0752afc-d9be-4884-af52-3ee36a6c7add | operator=MPT
-2026-04-25T10:55:57.861+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 🔍 [CONSUMER] Transaction loaded | txnId=5 | status=SENT_TO_QUEUE
-2026-04-25T10:55:57.864+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : ⚙️ Process start | txnId=5
-2026-04-25T10:55:58.071+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 📶 SIM selected | simId=1 | port=MPT-SIM-1
-2026-04-25T10:56:20.004+06:30 ERROR 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.e.service.ussd.MptTopupUssdService   : MPT ERROR | mobile=09441331456 | error=USSD Gateway error
-
-java.lang.RuntimeException: USSD Gateway error
-	at com.bytebridges.eload.service.external.UssdGatewayClient.call(UssdGatewayClient.java:30) ~[classes/:na]
-	at com.bytebridges.eload.service.ussd.MptTopupUssdService.topup(MptTopupUssdService.java:28) ~[classes/:na]
-	at com.bytebridges.eload.service.MptTopupService.processTopup(MptTopupService.java:105) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.6.jar:7.0.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.6.jar:7.0.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.6.jar:7.0.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.6.jar:7.0.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.6.jar:7.0.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.6.jar:7.0.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.6.jar:7.0.6]
-	at com.bytebridges.eload.service.MptTopupService$$SpringCGLIB$$0.processTopup(<generated>) ~[classes/:na]
-	at com.bytebridges.eload.messaging.TopupConsumer.process(TopupConsumer.java:39) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:168) ~[spring-messaging-7.0.6.jar:7.0.6]
-	at org.springframework.amqp.rabbit.listener.adapter.KotlinAwareInvocableHandlerMethod.doInvoke(KotlinAwareInvocableHandlerMethod.java:47) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) ~[spring-messaging-7.0.6.jar:7.0.6]
-	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:83) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:287) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:233) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:157) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1683) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1612) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1599) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1590) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListenerAndHandleException(AbstractMessageListenerContainer.java:1539) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1520) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1116) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1061) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.mainLoop(SimpleMessageListenerContainer.java:1465) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1359) ~[spring-rabbit-4.0.2.jar:4.0.2]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: org.springframework.web.reactive.function.client.WebClientRequestException: Connection timed out: getsockopt: /74.50.215.50:80
-	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$0(ExchangeFunctions.java:137) ~[spring-webflux-7.0.6.jar:7.0.6]
-	Suppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: 
-Error has been observed at the following site(s):
-	*__checkpoint ⇢ Request to GET http://74.50.215.50/goip_send_ussd.html [DefaultWebClient]
-Original Stack Trace:
-		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$0(ExchangeFunctions.java:137) ~[spring-webflux-7.0.6.jar:7.0.6]
-		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:56) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4569) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:104) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:225) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:225) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:225) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:94) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:206) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:125) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:230) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:282) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:123) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:326) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:211) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:109) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:480) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:624) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:879) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:138) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:336) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:138) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1740) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:197) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:206) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:336) ~[reactor-netty-http-1.3.4.jar:1.3.4]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:206) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:182) ~[reactor-netty-core-1.3.4.jar:1.3.4]
-		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:504) ~[reactor-netty-core-1.3.4.jar:1.3.4]
-		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:444) ~[reactor-netty-core-1.3.4.jar:1.3.4]
-		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:206) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:610) ~[reactor-netty-core-1.3.4.jar:1.3.4]
-		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:316) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:107) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.Operators.error(Operators.java:198) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.MonoError.subscribe(MonoError.java:54) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4569) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:104) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:604) ~[reactor-netty-core-1.3.4.jar:1.3.4]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:550) ~[reactor-netty-core-1.3.4.jar:1.3.4]
-		at reactor.netty.transport.TransportConnector.lambda$null$7(TransportConnector.java:263) ~[reactor-netty-core-1.3.4.jar:1.3.4]
-		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:604) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:597) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:573) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:506) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:650) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:643) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:132) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:371) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:387) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:432) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-		at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-	Suppressed: java.lang.Exception: #block terminated with an error
-		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104) ~[reactor-core-3.8.4.jar:3.8.4]
-		at reactor.core.publisher.Mono.block(Mono.java:1773) ~[reactor-core-3.8.4.jar:3.8.4]
-		at com.bytebridges.eload.service.external.UssdGatewayClient.call(UssdGatewayClient.java:24) ~[classes/:na]
-		at com.bytebridges.eload.service.ussd.MptTopupUssdService.topup(MptTopupUssdService.java:28) ~[classes/:na]
-		at com.bytebridges.eload.service.MptTopupService.processTopup(MptTopupService.java:105) ~[classes/:na]
-		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-		at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.6.jar:7.0.6]
-		at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.6.jar:7.0.6]
-		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.6.jar:7.0.6]
-		at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.6.jar:7.0.6]
-		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.6.jar:7.0.6]
-		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.6.jar:7.0.6]
-		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
-		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.6.jar:7.0.6]
-		at com.bytebridges.eload.service.MptTopupService$$SpringCGLIB$$0.processTopup(<generated>) ~[classes/:na]
-		at com.bytebridges.eload.messaging.TopupConsumer.process(TopupConsumer.java:39) ~[classes/:na]
-		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-		at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-		at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:168) ~[spring-messaging-7.0.6.jar:7.0.6]
-		at org.springframework.amqp.rabbit.listener.adapter.KotlinAwareInvocableHandlerMethod.doInvoke(KotlinAwareInvocableHandlerMethod.java:47) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) ~[spring-messaging-7.0.6.jar:7.0.6]
-		at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:83) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:287) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:233) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:157) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1683) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1612) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1599) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1590) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListenerAndHandleException(AbstractMessageListenerContainer.java:1539) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1520) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1116) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1061) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.mainLoop(SimpleMessageListenerContainer.java:1465) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1359) ~[spring-rabbit-4.0.2.jar:4.0.2]
-		at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: getsockopt: /74.50.215.50:80
-Caused by: java.net.ConnectException: Connection timed out: getsockopt
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:690) ~[na:na]
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:384) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:432) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2026-04-25T10:56:20.012+06:30  WARN 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : ⚠️ FAILED | txnId=5
-2026-04-25T10:56:20.017+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 🔓 SIM released | simId=1
-2026-04-25T10:56:20.018+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.service.MptTopupService        : 💾 Transaction saved | txnId=5 | status=FAILED
-2026-04-25T10:56:20.027+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.eload.messaging.TopupConsumer        : 🏁 [CONSUMER] Processing completed | txnId=5 | finalStatus=FAILED
-2026-04-25T10:56:23.509+06:30  INFO 7072 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
-2026-04-25T11:37:38.033+06:30  WARN 7072 --- [bb-eload-api] [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
-2026-04-25T11:37:38.575+06:30  WARN 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it
-
-com.rabbitmq.client.ShutdownSignalException: connection error
-	at com.rabbitmq.client.impl.AMQConnection.startShutdown(AMQConnection.java:1014) ~[amqp-client-5.27.1.jar:5.27.1]
-	at com.rabbitmq.client.impl.AMQConnection.shutdown(AMQConnection.java:1004) ~[amqp-client-5.27.1.jar:5.27.1]
-	at com.rabbitmq.client.impl.AMQConnection.handleFailure(AMQConnection.java:808) ~[amqp-client-5.27.1.jar:5.27.1]
-	at com.rabbitmq.client.impl.AMQConnection.access$500(AMQConnection.java:49) ~[amqp-client-5.27.1.jar:5.27.1]
-	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:703) ~[amqp-client-5.27.1.jar:5.27.1]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[na:na]
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[na:na]
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[na:na]
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[na:na]
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291) ~[na:na]
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:325) ~[na:na]
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:312) ~[na:na]
-	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:295) ~[na:na]
-	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:92) ~[amqp-client-5.27.1.jar:5.27.1]
-	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199) ~[amqp-client-5.27.1.jar:5.27.1]
-	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:694) ~[amqp-client-5.27.1.jar:5.27.1]
-	... 1 common frames omitted
-
-2026-04-25T11:37:38.594+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@10de078f: tags=[[amq.ctag-uC3APj8ARLOagD2GFfZUUA]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@2285f28b Shared Rabbit Connection: SimpleConnection@1c078351 [delegate=amqp://guest@127.0.0.1:5672/, localPort=53612], acknowledgeMode=AUTO local queue size=0
-2026-04-25T11:37:38.621+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
-2026-04-25T11:37:38.650+06:30  INFO 7072 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#335d6f94:1/SimpleConnection@73bf9039 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57129]
-2026-04-25T11:37:42.355+06:30  WARN 7072 --- [bb-eload-api] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m51s26ms104µs900ns).
-2026-04-25T12:06:26.323+06:30  WARN 7072 --- [bb-eload-api] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m43s967ms546µs100ns).
+2026-04-27T22:08:41.602+06:30  INFO 8416 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-27T22:08:41.673+06:30  INFO 8416 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-27T22:08:41.785+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-27T22:08:43.638+06:30  WARN 8416 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-27T22:08:43.656+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-27T22:08:44.286+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-04-27T22:08:44.287+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72602969]]
+2026-04-27T22:08:44.288+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-04-27T22:08:44.308+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-27T22:08:44.313+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-27T22:08:44.392+06:30  INFO 8416 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6824c2e6:0/SimpleConnection@1c078351 [delegate=amqp://guest@127.0.0.1:5672/, localPort=53390]
+2026-04-27T22:08:44.443+06:30  INFO 8416 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 8.702 seconds (process running for 9.419)
+2026-04-27T22:08:51.425+06:30  INFO 8416 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-27T22:08:51.426+06:30  INFO 8416 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-27T22:08:51.429+06:30  INFO 8416 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-27T22:08:51.493+06:30  INFO 8416 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 🚀 Create topup | phone=09441331456 | amount=500
+2026-04-27T22:08:51.637+06:30  INFO 8416 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 🚀 [PRODUCER] Preparing message | txnId=7 | messageId=1875248d-c5a1-4931-ab6d-d8c9237caffc | operator=MPT
+2026-04-27T22:08:51.699+06:30  INFO 8416 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 📤 [PRODUCER] Message sent | txnId=7 | messageId=1875248d-c5a1-4931-ab6d-d8c9237caffc | queue=TOPUP_QUEUE
+2026-04-27T22:08:51.699+06:30  INFO 8416 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 📤 Sent to queue | txnId=7
+2026-04-27T22:08:51.754+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 📩 [CONSUMER] Message received | txnId=7 | messageId=1875248d-c5a1-4931-ab6d-d8c9237caffc | operator=MPT
+2026-04-27T22:08:51.813+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🔍 [CONSUMER] Transaction loaded | txnId=7 | status=SENT_TO_QUEUE
+2026-04-27T22:08:51.815+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚙️ Process start | txnId=7
+2026-04-27T22:08:51.950+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 📶 SIM selected | simId=1 | port=25A
+2026-04-27T22:08:51.951+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Request | mobile=09441331456 | req=http://192.168.0.252/goip_send_ussd.html?username=root&password=root&port=25A&ussd=*125*500*09441331456*8899#
+2026-04-27T22:09:44.277+06:30  INFO 8416 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-04-27T22:09:52.507+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Response | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T22:09:52.507+06:30 ERROR 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 failed | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T22:09:52.508+06:30  WARN 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚠️ FAILED | txnId=7
+2026-04-27T22:09:52.512+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 🔓 SIM released | simId=1
+2026-04-27T22:09:52.513+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 💾 Transaction saved | txnId=7 | status=FAILED
+2026-04-27T22:09:52.520+06:30  INFO 8416 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🏁 [CONSUMER] Processing completed | txnId=7 | finalStatus=FAILED
+2026-04-27T22:11:07.800+06:30  INFO 11016 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 11016 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-04-27T22:11:07.805+06:30  INFO 11016 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-27T22:11:09.134+06:30  INFO 11016 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-27T22:11:09.331+06:30  INFO 11016 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 184 ms. Found 2 JPA repository interfaces.
+2026-04-27T22:11:10.104+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-27T22:11:10.125+06:30  INFO 11016 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-27T22:11:10.125+06:30  INFO 11016 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-27T22:11:10.236+06:30  INFO 11016 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2356 ms
+2026-04-27T22:11:10.506+06:30  INFO 11016 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-27T22:11:10.599+06:30  INFO 11016 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-27T22:11:11.327+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-27T22:11:11.387+06:30  INFO 11016 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-27T22:11:11.867+06:30  INFO 11016 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3731e8b6
+2026-04-27T22:11:11.870+06:30  INFO 11016 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-27T22:11:12.004+06:30  INFO 11016 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-27T22:11:12.983+06:30  INFO 11016 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-27T22:11:13.057+06:30  INFO 11016 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-27T22:11:13.170+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-27T22:11:14.945+06:30  WARN 11016 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-27T22:11:14.961+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-27T22:11:15.634+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-04-27T22:11:15.637+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72602969]]
+2026-04-27T22:11:15.638+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-04-27T22:11:15.668+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-27T22:11:15.675+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-27T22:11:15.782+06:30  INFO 11016 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6824c2e6:0/SimpleConnection@1c078351 [delegate=amqp://guest@127.0.0.1:5672/, localPort=53409]
+2026-04-27T22:11:15.862+06:30  INFO 11016 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 8.727 seconds (process running for 9.431)
+2026-04-27T22:11:42.975+06:30  INFO 11016 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-27T22:11:42.975+06:30  INFO 11016 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-27T22:11:42.977+06:30  INFO 11016 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-27T22:11:43.038+06:30  INFO 11016 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 🚀 Create topup | phone=09441331456 | amount=500
+2026-04-27T22:11:43.171+06:30  INFO 11016 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 🚀 [PRODUCER] Preparing message | txnId=8 | messageId=7ec047c6-167f-4779-9ce1-35bf6b7bda5c | operator=MPT
+2026-04-27T22:11:43.249+06:30  INFO 11016 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 📤 [PRODUCER] Message sent | txnId=8 | messageId=7ec047c6-167f-4779-9ce1-35bf6b7bda5c | queue=TOPUP_QUEUE
+2026-04-27T22:11:43.249+06:30  INFO 11016 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 📤 Sent to queue | txnId=8
+2026-04-27T22:11:43.313+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 📩 [CONSUMER] Message received | txnId=8 | messageId=7ec047c6-167f-4779-9ce1-35bf6b7bda5c | operator=MPT
+2026-04-27T22:11:43.363+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🔍 [CONSUMER] Transaction loaded | txnId=8 | status=SENT_TO_QUEUE
+2026-04-27T22:11:43.365+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚙️ Process start | txnId=8
+2026-04-27T22:11:43.507+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 📶 SIM selected | simId=1 | port=25A
+2026-04-27T22:11:43.508+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Request | mobile=09441331456 | req=http://192.168.0.252/goip_send_ussd.html?username=root&password=root&port=25A&ussd=*125*500*09441331456*8899%2523
+2026-04-27T22:12:15.622+06:30  INFO 11016 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-04-27T22:12:44.202+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Response | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T22:12:44.203+06:30 ERROR 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 failed | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T22:12:44.203+06:30  WARN 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚠️ FAILED | txnId=8
+2026-04-27T22:12:44.207+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 🔓 SIM released | simId=1
+2026-04-27T22:12:44.208+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 💾 Transaction saved | txnId=8 | status=FAILED
+2026-04-27T22:12:44.229+06:30  INFO 11016 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🏁 [CONSUMER] Processing completed | txnId=8 | finalStatus=FAILED
+2026-04-27T22:34:55.893+06:30  INFO 5340 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 5340 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-04-27T22:34:55.899+06:30  INFO 5340 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-27T22:34:57.267+06:30  INFO 5340 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-27T22:34:57.450+06:30  INFO 5340 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 2 JPA repository interfaces.
+2026-04-27T22:34:58.242+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-27T22:34:58.264+06:30  INFO 5340 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-27T22:34:58.264+06:30  INFO 5340 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-27T22:34:58.383+06:30  INFO 5340 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2402 ms
+2026-04-27T22:34:58.651+06:30  INFO 5340 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-27T22:34:58.743+06:30  INFO 5340 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-27T22:34:59.413+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-27T22:34:59.450+06:30  INFO 5340 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-27T22:34:59.901+06:30  INFO 5340 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3731e8b6
+2026-04-27T22:34:59.905+06:30  INFO 5340 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-27T22:35:00.037+06:30  INFO 5340 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-27T22:35:01.038+06:30  INFO 5340 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-27T22:35:01.110+06:30  INFO 5340 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-27T22:35:01.212+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-27T22:35:03.067+06:30  WARN 5340 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-27T22:35:03.081+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-27T22:35:03.729+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-04-27T22:35:03.731+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3e1d79ad]]
+2026-04-27T22:35:03.732+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-04-27T22:35:03.767+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-27T22:35:03.772+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-27T22:35:03.836+06:30  INFO 5340 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4306191:0/SimpleConnection@4ba6b5eb [delegate=amqp://guest@127.0.0.1:5672/, localPort=53490]
+2026-04-27T22:35:03.892+06:30  INFO 5340 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 8.694 seconds (process running for 9.376)
+2026-04-27T22:35:12.712+06:30  INFO 5340 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-27T22:35:12.713+06:30  INFO 5340 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-27T22:35:12.716+06:30  INFO 5340 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-27T22:35:12.779+06:30  INFO 5340 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 🚀 Create topup | phone=09441331456 | amount=500
+2026-04-27T22:35:12.926+06:30  INFO 5340 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 🚀 [PRODUCER] Preparing message | txnId=9 | messageId=7383e4a9-2c22-46a2-9299-2d27a856f605 | operator=MPT
+2026-04-27T22:35:12.990+06:30  INFO 5340 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 📤 [PRODUCER] Message sent | txnId=9 | messageId=7383e4a9-2c22-46a2-9299-2d27a856f605 | queue=TOPUP_QUEUE
+2026-04-27T22:35:12.991+06:30  INFO 5340 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 📤 Sent to queue | txnId=9
+2026-04-27T22:35:13.036+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 📩 [CONSUMER] Message received | txnId=9 | messageId=7383e4a9-2c22-46a2-9299-2d27a856f605 | operator=MPT
+2026-04-27T22:35:13.084+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🔍 [CONSUMER] Transaction loaded | txnId=9 | status=SENT_TO_QUEUE
+2026-04-27T22:35:13.085+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚙️ Process start | txnId=9
+2026-04-27T22:35:13.217+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 📶 SIM selected | simId=1 | port=25A
+2026-04-27T22:35:13.218+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Request | mobile=09441331456 | req=*125*500*09441331456*8899%23
+2026-04-27T22:36:03.715+06:30  INFO 5340 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-04-27T22:36:13.752+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Response | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T22:36:13.753+06:30 ERROR 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 failed | mobile=09441331456 | message=Message [code=6, reason=timeout, port=null, resp=null]
+2026-04-27T22:36:13.753+06:30  WARN 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚠️ FAILED | txnId=9
+2026-04-27T22:36:13.757+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 🔓 SIM released | simId=1
+2026-04-27T22:36:13.757+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 💾 Transaction saved | txnId=9 | status=FAILED
+2026-04-27T22:36:13.783+06:30  INFO 5340 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🏁 [CONSUMER] Processing completed | txnId=9 | finalStatus=FAILED
+2026-04-27T22:36:46.299+06:30  INFO 9320 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 9320 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-04-27T22:36:46.305+06:30  INFO 9320 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-27T22:36:47.629+06:30  INFO 9320 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-27T22:36:47.808+06:30  INFO 9320 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 2 JPA repository interfaces.
+2026-04-27T22:36:48.577+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-27T22:36:48.602+06:30  INFO 9320 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-27T22:36:48.602+06:30  INFO 9320 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-27T22:36:48.704+06:30  INFO 9320 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2324 ms
+2026-04-27T22:36:48.982+06:30  INFO 9320 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-27T22:36:49.062+06:30  INFO 9320 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-27T22:36:49.769+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-27T22:36:49.811+06:30  INFO 9320 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-27T22:36:50.261+06:30  INFO 9320 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@359fa722
+2026-04-27T22:36:50.263+06:30  INFO 9320 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-27T22:36:50.388+06:30  INFO 9320 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-27T22:36:51.357+06:30  INFO 9320 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-27T22:36:51.433+06:30  INFO 9320 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-27T22:36:51.554+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-27T22:36:53.412+06:30  WARN 9320 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-27T22:36:53.426+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-27T22:36:54.063+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-04-27T22:36:54.064+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4159c03b]]
+2026-04-27T22:36:54.065+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-04-27T22:36:54.090+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-27T22:36:54.095+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-27T22:36:54.156+06:30  INFO 9320 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#a3a54d6:0/SimpleConnection@6212695e [delegate=amqp://guest@127.0.0.1:5672/, localPort=53509]
+2026-04-27T22:36:54.223+06:30  INFO 9320 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 8.575 seconds (process running for 9.272)
+2026-04-27T22:37:10.299+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-27T22:37:10.299+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-27T22:37:10.305+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-04-27T22:37:10.371+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 🚀 Create topup | phone=09441331456 | amount=500
+2026-04-27T22:37:10.515+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 🚀 [PRODUCER] Preparing message | txnId=10 | messageId=9d95cb22-2d48-468f-82d7-2533da656ed3 | operator=MPT
+2026-04-27T22:37:10.587+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : 📤 [PRODUCER] Message sent | txnId=10 | messageId=9d95cb22-2d48-468f-82d7-2533da656ed3 | queue=TOPUP_QUEUE
+2026-04-27T22:37:10.588+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.MptTopupService       : 📤 Sent to queue | txnId=10
+2026-04-27T22:37:10.637+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 📩 [CONSUMER] Message received | txnId=10 | messageId=9d95cb22-2d48-468f-82d7-2533da656ed3 | operator=MPT
+2026-04-27T22:37:10.681+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🔍 [CONSUMER] Transaction loaded | txnId=10 | status=SENT_TO_QUEUE
+2026-04-27T22:37:10.683+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚙️ Process start | txnId=10
+2026-04-27T22:37:10.822+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 📶 SIM selected | simId=1 | port=25A
+2026-04-27T22:37:10.824+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Request | mobile=09441331456 | req=*125*500*09441331456*8899#
+2026-04-27T22:37:16.137+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Response | mobile=09441331456 | message=Message [code=0, reason=OK, port=null, resp=500 Ks will be transferred to 959441331456. To confirm,reply "1".To cancel,reply "0".]
+2026-04-27T22:37:16.138+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step2 Request | mobile=09441331456 | req=http://192.168.0.252/goip_send_ussd.html?username=root&password=root&port=25A&ussd=1
+2026-04-27T22:37:18.416+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step2 Response | mobile=09441331456 | message=Message [code=0, reason=OK, port=null, resp=Dear agent, you have successfully transferred 500 Ks to 959441331456.Your remaining balance is -84499 Ks.]
+2026-04-27T22:37:18.417+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT SUCCESS | mobile=09441331456 | finalResp=Dear agent, you have successfully transferred 500 Ks to 959441331456.Your remaining balance is -84499 Ks.
+2026-04-27T22:37:18.420+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ✅ SUCCESS | txnId=10
+2026-04-27T22:37:18.429+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 🔓 SIM released | simId=1
+2026-04-27T22:37:18.431+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 💾 Transaction saved | txnId=10 | status=SUCCESS
+2026-04-27T22:37:18.460+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🏁 [CONSUMER] Processing completed | txnId=10 | finalStatus=SUCCESS
+2026-04-27T22:37:54.065+06:30  INFO 9320 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-04-27T22:41:08.811+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-3] c.b.anytop.service.MptTopupService       : 🚀 Create topup | phone=09441331456 | amount=500
+2026-04-27T22:41:08.846+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-3] c.b.anytop.messaging.TopupProducer       : 🚀 [PRODUCER] Preparing message | txnId=11 | messageId=da51965c-5328-47f6-9f6f-089303b7909a | operator=MPT
+2026-04-27T22:41:08.849+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-3] c.b.anytop.messaging.TopupProducer       : 📤 [PRODUCER] Message sent | txnId=11 | messageId=da51965c-5328-47f6-9f6f-089303b7909a | queue=TOPUP_QUEUE
+2026-04-27T22:41:08.850+06:30  INFO 9320 --- [bb-eload-api] [http-nio-8080-exec-3] c.b.anytop.service.MptTopupService       : 📤 Sent to queue | txnId=11
+2026-04-27T22:41:08.856+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 📩 [CONSUMER] Message received | txnId=11 | messageId=da51965c-5328-47f6-9f6f-089303b7909a | operator=MPT
+2026-04-27T22:41:08.870+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🔍 [CONSUMER] Transaction loaded | txnId=11 | status=SENT_TO_QUEUE
+2026-04-27T22:41:08.873+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ⚙️ Process start | txnId=11
+2026-04-27T22:41:08.891+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 📶 SIM selected | simId=1 | port=25A
+2026-04-27T22:41:08.892+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Request | mobile=09441331456 | req=*125*500*09441331456*8899#
+2026-04-27T22:41:13.095+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step1 Response | mobile=09441331456 | message=Message [code=0, reason=OK, port=null, resp=500 Ks will be transferred to 959441331456. To confirm,reply "1".To cancel,reply "0".]
+2026-04-27T22:41:13.096+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step2 Request | mobile=09441331456 | req=http://192.168.0.252/goip_send_ussd.html?username=root&password=root&port=25A&ussd=1
+2026-04-27T22:41:15.674+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT Step2 Response | mobile=09441331456 | message=Message [code=0, reason=OK, port=null, resp=Dear agent, you have successfully transferred 500 Ks to 959441331456.Your remaining balance is -83999 Ks.]
+2026-04-27T22:41:15.675+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.MptTopupUssdService   : MPT SUCCESS | mobile=09441331456 | finalResp=Dear agent, you have successfully transferred 500 Ks to 959441331456.Your remaining balance is -83999 Ks.
+2026-04-27T22:41:15.676+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : ✅ SUCCESS | txnId=11
+2026-04-27T22:41:15.679+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 🔓 SIM released | simId=1
+2026-04-27T22:41:15.681+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.MptTopupService       : 💾 Transaction saved | txnId=11 | status=SUCCESS
+2026-04-27T22:41:15.710+06:30  INFO 9320 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : 🏁 [CONSUMER] Processing completed | txnId=11 | finalStatus=SUCCESS

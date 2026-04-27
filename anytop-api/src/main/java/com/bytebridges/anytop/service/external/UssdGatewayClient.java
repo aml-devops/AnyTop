@@ -13,17 +13,26 @@ import lombok.RequiredArgsConstructor;
 public class UssdGatewayClient {
 
     private final WebClient webClient;
+    private final ObjectMapper mapper = new ObjectMapper();
 
-    public Message call(String url) {
+    public Message call(String path,
+                        String port,
+                        String ussd) {
 
         try {
             String response = webClient.get()
-                    .uri(url)
+                    .uri(uriBuilder -> uriBuilder
+                            .path(path)
+                            .queryParam("username", "root")
+                            .queryParam("password", "root")
+                            .queryParam("port", port)
+                            .queryParam("ussd", ussd)
+                            .build()
+                    )
                     .retrieve()
                     .bodyToMono(String.class)
                     .block();
 
-            ObjectMapper mapper = new ObjectMapper();
             return mapper.readValue(response, Message.class);
 
         } catch (Exception e) {

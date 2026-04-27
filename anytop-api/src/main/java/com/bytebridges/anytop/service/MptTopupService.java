@@ -51,7 +51,7 @@ public class MptTopupService {
         txn = txnRepo.save(txn);
 
         String messageId = UUID.randomUUID().toString();
-
+        
         txn.setMessageId(messageId);
         txn.setStatus("SENT_TO_QUEUE");
         txnRepo.save(txn);
