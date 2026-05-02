@@ -1,95 +1,124 @@
 package com.bytebridges.anytop.service.ussd;
 
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
-
 import org.springframework.stereotype.Service;
 
 import com.bytebridges.anytop.config.EloadConfig;
 import com.bytebridges.anytop.dto.Message;
 import com.bytebridges.anytop.enums.TxnStatus;
+import com.bytebridges.anytop.service.UssdTopupService;
 import com.bytebridges.anytop.service.external.UssdGatewayClient;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-@Service
+@Service("MPT")
 @RequiredArgsConstructor
 @Slf4j
-public class MptTopupUssdService {
+public class MptTopupUssdService implements UssdTopupService {
 
-    private final UssdGatewayClient client;
-    private final EloadConfig config;
+	private final UssdGatewayClient client;
+	private final EloadConfig config;
 
-    public TxnStatus topup(String port, String mobile, String amount) {
+	public TxnStatus topup(Long txnId, String port, String password, String mobile, String amount) {
 
-        try {
-            // Step 1
-            //String step1Request = build(port, "*125*" + amount + "*" + mobile + "*8899#");
-            String ussd = "*125*" + amount + "*" + mobile + "*8899#";
-            log.info("MPT Step1 Request | mobile={} | req={}", mobile, ussd);
+		long startTime = System.currentTimeMillis();
 
-            Message pre = client.call("/goip_send_ussd.html", port, ussd);
-            log.info("MPT Step1 Response | mobile={} | message={}", mobile, pre);
+		String maskedMobile = mask(mobile);
+		//String operator = "MPT";
 
-            if (pre == null || pre.getResp() == null) {
-                log.error("MPT Step1 failed | mobile={} | message={}", mobile, pre);
-                return TxnStatus.FAILED;
-            }
+		log.info("MPT_TOPUP_STARTED txId={} port={} mobile={} amount={}", txnId, port, maskedMobile, amount);
 
-            // Step 2
-            String step2Request = build(port, "1");
-            String ussd1 = "1";
-            log.info("MPT Step2 Request | mobile={} | req={}", mobile, step2Request);
+		try {
 
-            Message confirm = client.call("/goip_send_ussd.html", port, ussd1);
-            log.info("MPT Step2 Response | mobile={} | message={}", mobile, confirm);
+			// STEP 1
+			String step1Request = "*125*" + amount + "*" + mobile + "*" + password + "#";
 
-            if (confirm == null || confirm.getResp() == null) {
-                log.error("MPT Step2 failed | mobile={} | message={}", mobile, confirm);
-                return TxnStatus.FAILED;
-            }
+			log.debug("MPT_STEP1_REQUEST txId={} request={}", txnId, step1Request);
 
-            // Step 3 (optional confirm)
-            if (needSecondConfirm(confirm)) {
-                log.info("MPT يحتاج Second Confirm | mobile={}", mobile);
+			long t1 = System.currentTimeMillis();
 
-                confirm = client.call("/goip_send_ussd.html", port, ussd1);
-                log.info("MPT Step3 Response | mobile={} | message={}", mobile, confirm);
-            }
+			Message pre = client.call(config.getEndpoints().getUssdGateway(), port, step1Request);
 
-            // Final validation
-            if (isSuccess(confirm)) {
-                log.info("MPT SUCCESS | mobile={} | finalResp={}", mobile, confirm.getResp());
-                return TxnStatus.SUCCESS;
-            } else {
-                log.error("MPT FAILED | mobile={} | finalResp={}", mobile, confirm.getResp());
-                return TxnStatus.FAILED;
-            }
+			log.debug("MPT_STEP1_RESPONSE txId={} durationMs={} response={}", txnId, System.currentTimeMillis() - t1,
+					safeResp(pre));
 
-        } catch (Exception e) {
-            log.error("MPT ERROR | mobile={} | error={}", mobile, e.getMessage(), e);
-            return TxnStatus.FAILED;
-        }
-    }
+			if (pre == null || pre.getResp() == null) {
 
-    private String build(String port, String ussd) {
-        return config.getUssdGateway() +
-                "username=" + config.getUsername() +
-                "&password=" + config.getPassword() +
-                "&port=" + port +
-                "&ussd=" + ussd;
-    }
+				log.warn("MPT_STEP1_FAILED txId={} reason=NULL_RESPONSE", txnId);
 
-    private boolean needSecondConfirm(Message msg) {
-        return msg != null &&
-               msg.getResp() != null &&
-               msg.getResp().toLowerCase().contains("confirm");
-    }
+				return TxnStatus.FAILED;
+			}
 
-    private boolean isSuccess(Message msg) {
-        return msg != null &&
-               msg.getResp() != null &&
-               msg.getResp().toLowerCase().contains("success");
-    }
+			// STEP 2
+			log.debug("MPT_STEP2_REQUEST txId={}", txnId);
+
+			long t2 = System.currentTimeMillis();
+
+			Message confirm = client.call(config.getEndpoints().getUssdGateway(), port, "1");
+
+			log.debug("MPT_STEP2_RESPONSE txId={} durationMs={} response={}", txnId, System.currentTimeMillis() - t2,
+					safeResp(confirm));
+
+			if (confirm == null || confirm.getResp() == null) {
+
+				log.warn("MPT_STEP2_FAILED txId={} reason=NULL_RESPONSE", txnId);
+
+				return TxnStatus.FAILED;
+			}
+
+			// STEP 3
+			if (needSecondConfirm(confirm)) {
+
+				log.debug("MPT_STEP3_REQUEST txId={}", txnId);
+
+				long t3 = System.currentTimeMillis();
+
+				confirm = client.call(config.getEndpoints().getUssdGateway(), port, "1");
+
+				log.debug("MPT_STEP3_RESPONSE txId={} durationMs={} response={}", txnId, System.currentTimeMillis() - t3,
+						safeResp(confirm));
+			}
+
+			long totalTime = System.currentTimeMillis() - startTime;
+
+			if (isSuccess(confirm)) {
+
+				log.info("MPT_TOPUP_SUCCESS txId={} durationMs={}", txnId, totalTime);
+
+				return TxnStatus.SUCCESS;
+			}
+
+			log.warn("MPT_TOPUP_FAILED txId={} durationMs={} response={}", txnId, totalTime, safeResp(confirm));
+
+			return TxnStatus.FAILED;
+
+		} catch (Exception e) {
+
+			long totalTime = System.currentTimeMillis() - startTime;
+
+			log.error("MPT_TOPUP_ERROR txId={} operator={} durationMs={} errorType={}", txnId, totalTime, e.getClass().getSimpleName(), e);
+
+			return TxnStatus.FAILED;
+		}
+	}
+
+	// ✅ Safe response logging (avoid NPE)
+	private String safeResp(Message msg) {
+		return (msg != null && msg.getResp() != null) ? msg.getResp() : "NULL";
+	}
+
+	// ✅ Mask sensitive data
+	private String mask(String mobile) {
+		if (mobile == null || mobile.length() < 4)
+			return "****";
+		return "****" + mobile.substring(mobile.length() - 4);
+	}
+
+	private boolean needSecondConfirm(Message msg) {
+		return safeResp(msg).toLowerCase().contains("confirm");
+	}
+
+	private boolean isSuccess(Message msg) {
+		return safeResp(msg).toLowerCase().contains("success");
+	}
 }

@@ -24,6 +24,8 @@ public class SimCard {
 
     @Enumerated(EnumType.STRING)
     private SimStatus status; // FREE, BUSY, LOW_BALANCE, DOWN
+    
+    private String password;
 
     private Boolean isActive;
 

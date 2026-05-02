@@ -24,14 +24,14 @@ spring:
       format_sql: true
  
 eload:
-  queue:
-    topup: TOPUP_QUEUE
+  base-url: http://192.168.0.252
   username: root
   password: root
-  ussd-gateway: http://192.168.0.252/goip_send_ussd.html?
-  get-status: http://192.168.0.252/goip_get_status.html?
-  send-cmd: http://192.168.0.252/goip_send_cmd.html?
-  post-sms: http://192.168.0.252/goip_post_sms?
+  endpoints:
+    ussd-gateway: /goip_send_ussd.html
+    get-status: /goip_get_status.html
+    send-cmd: /goip_send_cmd.html
+    post-sms: /goip_post_sms
 
 logging:
   level:

@@ -1,19 +1,26 @@
 package com.bytebridges.anytop.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-@Component
+@Configuration
 @ConfigurationProperties(prefix = "eload")
+@Getter
+@Setter
 public class EloadConfig {
-
+    private String baseUrl;
+    private Endpoints endpoints;
     private String username;
     private String password;
-    private String ussdGateway;
-    private String getStatus;
-    private String sendCmd;
-    private String postSms;
+
+    @Getter @Setter
+    public static class Endpoints {
+        private String ussdGateway;
+        private String getStatus;
+        private String sendCmd;
+        private String postSms;
+    }
 }
