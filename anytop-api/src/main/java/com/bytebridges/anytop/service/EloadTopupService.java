@@ -90,18 +90,18 @@ public class EloadTopupService {
 			// STEP 1 : Select & Lock SIM
 			sim = selectAndLockSim(txn.getOperator(), txn.getAmount());
 
-			log.info("ELOAD_SIM_SELECTED txnId={} | operator={} | simId={} | port={}", txn.getId(), txn.getOperator(), sim.getId(), sim.getSimName());
+			log.info("ELOAD_SIM_SELECTED txnId={} operator={} simId={} port={}", txn.getId(), txn.getOperator(), sim.getId(), sim.getSimName());
 
 			wsService.sendUpdate(new TransactionUpdate(txn.getId(), "SIM_SELECTED", sim.getSimName(), "Locked SIM"));
 
 			// STEP 2 : Execute USSD Topup
-			log.info("ELOAD_USSD_REQUEST txnId={} | operator={} | port={} | mobile={} | amount={}", txn.getId(), txn.getOperator(), sim.getSimName(), txn.getPhoneNumber(), txn.getAmount());
+			log.info("ELOAD_USSD_REQUEST txnId={} operator={} port={} mobile={} amount={}", txn.getId(), txn.getOperator(), sim.getSimName(), txn.getPhoneNumber(), txn.getAmount());
 
 			TxnStatus result = ussdTopupEngine.route(Operator.from(txn.getOperator()), txn.getId(), sim.getSimName(), sim.getPassword(), txn.getPhoneNumber(), String.valueOf(txn.getAmount()));
 
 			boolean success = result == TxnStatus.SUCCESS;
 
-			log.info("ELOAD_USSD_RESPONSE txnId={} | operator={} | result={}", txn.getId(), txn.getOperator(), result);
+			log.info("ELOAD_USSD_RESPONSE txnId={} operator={} result={}", txn.getId(), txn.getOperator(), result);
 
 			txn.setSimId(sim.getId());
 			txn.setStatus(success ? "SUCCESS" : "FAILED");
@@ -112,26 +112,26 @@ public class EloadTopupService {
 				sim.setBalance(sim.getBalance() - txn.getAmount());
 				simRepo.save(sim);
 
-				log.info("ELOAD_USSD_SUCCESS txnId={} | operator={} | simId={} | remainingBalance={}", txn.getId(), txn.getOperator(), sim.getId(), sim.getBalance());
+				log.info("ELOAD_USSD_SUCCESS txnId={} operator={} simId={} remainingBalance={}", txn.getId(), txn.getOperator(), sim.getId(), sim.getBalance());
 
 				wsService.sendUpdate(new TransactionUpdate(txn.getId(), "SUCCESS", sim.getSimName(), "Completed"));
 
 			} else {
 
-				log.warn("ELOAD_USSD_FAILED txnId={} | operator={} | simId={} | reason=USSD_FAILED", txn.getId(), txn.getOperator(), sim.getId());
+				log.warn("ELOAD_USSD_FAILED txnId={} operator={} simId={} reason=USSD_FAILED", txn.getId(), txn.getOperator(), sim.getId());
 
 				wsService.sendUpdate(new TransactionUpdate(txn.getId(), "FAILED", sim.getSimName(), "Failed"));
 			}
 
 			long duration = System.currentTimeMillis() - startTime;
 
-			log.info("ELOAD_COMPLETED txnId={} | operator={} | status={} | durationMs={}", txn.getId(), txn.getOperator(), txn.getStatus(), duration);
+			log.info("ELOAD_COMPLETED txnId={} operator={} status={} durationMs={}", txn.getId(), txn.getOperator(), txn.getStatus(), duration);
 
 		} catch (Exception ex) {
 
 			txn.setStatus("FAILED");
 
-			log.error("ELOAD_ERROR txnId={} | operator={} | errorType={} | message={}", txn.getId(), txn.getOperator(), ex.getClass().getSimpleName(), ex.getMessage(), ex);
+			log.error("ELOAD_ERROR txnId={} operator={} errorType={} message={}", txn.getId(), txn.getOperator(), ex.getClass().getSimpleName(), ex.getMessage(), ex);
 
 		} finally {
 
@@ -139,12 +139,12 @@ public class EloadTopupService {
 
 				releaseSim(sim.getId());
 
-				log.info("ELOAD_SIM_RELEASED txnId={} | simId={} | port={}", txn.getId(), sim.getId(), sim.getSimName());
+				log.info("ELOAD_SIM_RELEASED txnId={} simId={} port={}", txn.getId(), sim.getId(), sim.getSimName());
 			}
 
 			txnRepo.save(txn);
 
-			log.info("TOPUP_TXN_SAVED txnId={} | status={}", txn.getId(), txn.getStatus());
+			log.info("TOPUP_TXN_SAVED txnId={} status={}", txn.getId(), txn.getStatus());
 		}
 	}
 

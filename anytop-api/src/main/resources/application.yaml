@@ -35,6 +35,6 @@ eload:
 
 logging:
   level:
-    com.bytebridges.eload: INFO
+    com.bytebridges.anytop: DEBUG
   file:
     name: logs/eload.log
