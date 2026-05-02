@@ -746,3 +746,522 @@ Caused by: java.net.ConnectException: Connection timed out: getsockopt
 2026-05-02T14:11:47.157+06:30  INFO 26408 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=46 | simId=1 | port=25A
 2026-05-02T14:11:47.159+06:30  INFO 26408 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=46 | status=FAILED
 2026-05-02T14:11:47.168+06:30  INFO 26408 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=46 status=FAILED durationMs=22290
+2026-05-02T16:41:51.503+06:30  INFO 10580 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 10580 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-05-02T16:41:51.509+06:30 DEBUG 10580 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-02T16:41:51.510+06:30  INFO 10580 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-02T16:41:52.851+06:30  INFO 10580 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-02T16:41:53.039+06:30  INFO 10580 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 2 JPA repository interfaces.
+2026-05-02T16:41:53.842+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-02T16:41:53.863+06:30  INFO 10580 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-02T16:41:53.864+06:30  INFO 10580 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-02T16:41:53.980+06:30  INFO 10580 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2391 ms
+2026-05-02T16:41:54.277+06:30  INFO 10580 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-02T16:41:54.363+06:30  INFO 10580 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-02T16:41:55.051+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-02T16:41:55.106+06:30  INFO 10580 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-02T16:41:55.588+06:30  INFO 10580 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e3dc24f
+2026-05-02T16:41:55.591+06:30  INFO 10580 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-02T16:41:55.720+06:30  INFO 10580 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-02T16:41:56.692+06:30  INFO 10580 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-02T16:41:56.767+06:30  INFO 10580 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-02T16:41:56.902+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-02T16:41:58.809+06:30  WARN 10580 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-02T16:41:58.823+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-02T16:41:59.470+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-05-02T16:41:59.471+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@71637a85]]
+2026-05-02T16:41:59.471+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-05-02T16:41:59.494+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-02T16:41:59.498+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-05-02T16:41:59.554+06:30  INFO 10580 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4d424aea:0/SimpleConnection@648b4b14 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64997]
+2026-05-02T16:41:59.618+06:30  INFO 10580 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 8.791 seconds (process running for 9.572)
+2026-05-02T16:42:59.470+06:30  INFO 10580 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-02T16:59:07.366+06:30  INFO 10580 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-02T16:59:07.367+06:30  INFO 10580 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-02T16:59:07.370+06:30  INFO 10580 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-02T16:59:07.555+06:30  INFO 10580 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=MYTEL phone=096****43 amount=500
+2026-05-02T16:59:07.752+06:30  INFO 10580 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=49 messageId=d6243c67-992e-4db3-bb7b-a2cf18aa8565 queue=TOPUP_QUEUE durationMs=63
+2026-05-02T16:59:07.814+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=49 operator=MYTEL messageId=d6243c67-992e-4db3-bb7b-a2cf18aa8565
+2026-05-02T16:59:07.885+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=49 status=SENT_TO_QUEUE
+2026-05-02T16:59:08.015+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=49 operator=MYTEL simId=10 port=2A
+2026-05-02T16:59:08.023+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=49 operator=MYTEL port=2A mobile=09677007443 amount=500
+2026-05-02T16:59:08.024+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_STARTED txId=49 port=2A mobile=****7443 amount=500
+2026-05-02T16:59:08.024+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_REQUEST txId=49 port=2A mobile=****7443
+2026-05-02T16:59:11.229+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=2A | response={"code":0, "reason":"OK", "resp":"1. Sell\r\n2. Utility"}
+2026-05-02T16:59:11.235+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_RESPONSE txId=49 port=2A mobile=****7443 durationMs=3211 response=1. Sell
+2. Utility
+2026-05-02T16:59:11.235+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP2_REQUEST txId=49 port=2A mobile=****7443
+2026-05-02T16:59:12.791+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=2A | response={"code":0, "reason":"OK", "resp":"1. Reload E-load\r\n2. Transfer E-load\r\n3. Back"}
+2026-05-02T16:59:12.792+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP2_RESPONSE txId=49 port=2A mobile=****7443 durationMs=1557 response=1. Reload E-load
+2. Transfer E-load
+3. Back
+2026-05-02T16:59:12.793+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP3_REQUEST txId=49 port=2A mobile=****7443
+2026-05-02T16:59:14.430+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=2A | response={"code":0, "reason":"OK", "resp":"Input ISDN:\r\nPHONENUM (Num 5 - 15)"}
+2026-05-02T16:59:14.432+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP3_RESPONSE txId=49 port=2A mobile=****7443 durationMs=1638 response=Input ISDN:
+PHONENUM (Num 5 - 15)
+2026-05-02T16:59:14.432+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP4_REQUEST txId=49 port=2A mobile=****7443
+2026-05-02T16:59:16.550+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=2A | response={"code":0, "reason":"OK", "resp":"Select Amount:\r\n1. 1.000 MMK\r\n2. 2.000 MMK\r\n3. 3.000 MMK\r\n4. 5.000 MMK\r\n5. 10.000 MMK\r\n6. Input money"}
+2026-05-02T16:59:16.551+06:30 DEBUG 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP4_RESPONSE txId=49 port=2A mobile=****7443 durationMs=2118 response=Select Amount:
+1. 1.000 MMK
+2. 2.000 MMK
+3. 3.000 MMK
+4. 5.000 MMK
+5. 10.000 MMK
+6. Input money
+2026-05-02T16:59:16.566+06:30 ERROR 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_ERROR txId=49 port=2A mobile=****7443 durationMs=8542 errorType=IllegalArgumentException
+
+java.lang.IllegalArgumentException: Invalid Mytel amount: 500
+	at com.bytebridges.anytop.enums.MytelAmount.fromAmount(MytelAmount.java:29) ~[classes/:na]
+	at com.bytebridges.anytop.service.ussd.MytelTopupUssdService.topup(MytelTopupUssdService.java:116) ~[classes/:na]
+	at com.bytebridges.anytop.service.router.UssdTopupEngine.route(UssdTopupEngine.java:33) ~[classes/:na]
+	at com.bytebridges.anytop.service.EloadTopupService.processTopup(EloadTopupService.java:100) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.6.jar:7.0.6]
+	at com.bytebridges.anytop.service.EloadTopupService$$SpringCGLIB$$0.processTopup(<generated>) ~[classes/:na]
+	at com.bytebridges.anytop.messaging.TopupConsumer.process(TopupConsumer.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:168) ~[spring-messaging-7.0.6.jar:7.0.6]
+	at org.springframework.amqp.rabbit.listener.adapter.KotlinAwareInvocableHandlerMethod.doInvoke(KotlinAwareInvocableHandlerMethod.java:47) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) ~[spring-messaging-7.0.6.jar:7.0.6]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:83) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:287) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:233) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:157) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1683) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1612) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1599) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1590) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListenerAndHandleException(AbstractMessageListenerContainer.java:1539) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1520) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1116) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1061) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.mainLoop(SimpleMessageListenerContainer.java:1465) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1359) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-05-02T16:59:16.580+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=49 operator=MYTEL result=FAILED
+2026-05-02T16:59:16.580+06:30  WARN 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_FAILED txnId=49 operator=MYTEL simId=10 reason=USSD_FAILED
+2026-05-02T16:59:16.582+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=49 operator=MYTEL status=FAILED durationMs=8682
+2026-05-02T16:59:16.590+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=49 simId=10 port=2A
+2026-05-02T16:59:16.599+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=49 status=FAILED
+2026-05-02T16:59:16.617+06:30  INFO 10580 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=49 status=FAILED durationMs=8803
+2026-05-02T17:12:59.480+06:30  INFO 10580 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2026-05-02T17:42:59.485+06:30  INFO 10580 --- [bb-eload-api] [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2026-05-02T17:59:38.633+06:30  INFO 10840 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 10840 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-05-02T17:59:38.637+06:30 DEBUG 10840 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-02T17:59:38.639+06:30  INFO 10840 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-02T17:59:39.987+06:30  INFO 10840 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-02T17:59:40.167+06:30  INFO 10840 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 2 JPA repository interfaces.
+2026-05-02T17:59:40.932+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-02T17:59:40.956+06:30  INFO 10840 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-02T17:59:40.957+06:30  INFO 10840 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-02T17:59:41.073+06:30  INFO 10840 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2359 ms
+2026-05-02T17:59:41.372+06:30  INFO 10840 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-02T17:59:41.448+06:30  INFO 10840 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-02T17:59:42.105+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-02T17:59:42.163+06:30  INFO 10840 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-02T17:59:42.606+06:30  INFO 10840 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e3dc24f
+2026-05-02T17:59:42.609+06:30  INFO 10840 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-02T17:59:42.754+06:30  INFO 10840 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-02T17:59:43.734+06:30  INFO 10840 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-02T17:59:43.805+06:30  INFO 10840 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-02T17:59:43.920+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-02T17:59:45.876+06:30  WARN 10840 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-02T17:59:45.891+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-02T17:59:46.567+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-05-02T17:59:46.568+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7224ab89]]
+2026-05-02T17:59:46.569+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-05-02T17:59:46.589+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-02T17:59:46.594+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-05-02T17:59:46.648+06:30  INFO 10840 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4d424aea:0/SimpleConnection@67c492fc [delegate=amqp://guest@127.0.0.1:5672/, localPort=65294]
+2026-05-02T17:59:46.705+06:30  INFO 10840 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 8.745 seconds (process running for 9.364)
+2026-05-02T18:00:08.252+06:30  INFO 10840 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-02T18:00:08.253+06:30  INFO 10840 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-02T18:00:08.263+06:30  INFO 10840 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2026-05-02T18:00:08.455+06:30  INFO 10840 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=MYTEL phone=096****43 amount=500
+2026-05-02T18:00:08.682+06:30  INFO 10840 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=50 messageId=8f1c07b2-6d5d-4ab3-a560-d10e48d2a1a5 queue=TOPUP_QUEUE durationMs=64
+2026-05-02T18:00:08.741+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=50 operator=MYTEL messageId=8f1c07b2-6d5d-4ab3-a560-d10e48d2a1a5
+2026-05-02T18:00:08.811+06:30 DEBUG 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=50 status=SENT_TO_QUEUE
+2026-05-02T18:00:08.935+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=50 operator=MYTEL simId=10 port=2A
+2026-05-02T18:00:08.944+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=50 operator=MYTEL port=2A mobile=09677007443 amount=500
+2026-05-02T18:00:08.946+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_STARTED txId=50 port=2A mobile=****7443 amount=500
+2026-05-02T18:00:08.947+06:30 DEBUG 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_REQUEST txId=50 request=*888#
+2026-05-02T18:00:09.455+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=2A | response={"code":5, "reason":"SIM Not Registered", "max-port":32, "port":"4,6,8-10,12,13"}
+2026-05-02T18:00:09.463+06:30 DEBUG 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_RESPONSE txId=50 port=2A mobile=****7443 durationMs=516 response=NULL
+2026-05-02T18:00:09.464+06:30  WARN 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_FAILED txId=50 port=2A mobile=****7443 reason=NULL_RESPONSE
+2026-05-02T18:00:09.464+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=50 operator=MYTEL result=FAILED
+2026-05-02T18:00:09.465+06:30  WARN 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_FAILED txnId=50 operator=MYTEL simId=10 reason=USSD_FAILED
+2026-05-02T18:00:09.466+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=50 operator=MYTEL status=FAILED durationMs=635
+2026-05-02T18:00:09.469+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=50 simId=10 port=2A
+2026-05-02T18:00:09.473+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=50 status=FAILED
+2026-05-02T18:00:09.484+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=50 status=FAILED durationMs=743
+2026-05-02T18:00:46.569+06:30  INFO 10840 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-02T18:01:35.084+06:30  INFO 10840 --- [bb-eload-api] [http-nio-8080-exec-3] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=MYTEL phone=096****43 amount=500
+2026-05-02T18:01:35.111+06:30  INFO 10840 --- [bb-eload-api] [http-nio-8080-exec-3] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=51 messageId=afcca9c0-6ecd-44d4-8f73-f354ae01219d queue=TOPUP_QUEUE durationMs=4
+2026-05-02T18:01:35.120+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=51 operator=MYTEL messageId=afcca9c0-6ecd-44d4-8f73-f354ae01219d
+2026-05-02T18:01:35.135+06:30 DEBUG 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=51 status=SENT_TO_QUEUE
+2026-05-02T18:01:35.164+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=51 operator=MYTEL simId=10 port=2A
+2026-05-02T18:01:35.165+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=51 operator=MYTEL port=2A mobile=09677007443 amount=500
+2026-05-02T18:01:35.165+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_STARTED txId=51 port=2A mobile=****7443 amount=500
+2026-05-02T18:01:35.165+06:30 DEBUG 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_REQUEST txId=51 request=*888#
+2026-05-02T18:01:35.187+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=2A | response={"code":5, "reason":"SIM Not Registered", "max-port":32, "port":"4,6,8-10,12,13"}
+2026-05-02T18:01:35.188+06:30 DEBUG 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_RESPONSE txId=51 port=2A mobile=****7443 durationMs=22 response=NULL
+2026-05-02T18:01:35.188+06:30  WARN 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_FAILED txId=51 port=2A mobile=****7443 reason=NULL_RESPONSE
+2026-05-02T18:01:35.189+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=51 operator=MYTEL result=FAILED
+2026-05-02T18:01:35.189+06:30  WARN 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_FAILED txnId=51 operator=MYTEL simId=10 reason=USSD_FAILED
+2026-05-02T18:01:35.190+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=51 operator=MYTEL status=FAILED durationMs=37
+2026-05-02T18:01:35.191+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=51 simId=10 port=2A
+2026-05-02T18:01:35.197+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=51 status=FAILED
+2026-05-02T18:01:35.219+06:30  INFO 10840 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=51 status=FAILED durationMs=99
+2026-05-02T18:04:09.721+06:30  INFO 2884 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 2884 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-05-02T18:04:09.725+06:30 DEBUG 2884 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-02T18:04:09.727+06:30  INFO 2884 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-02T18:04:11.089+06:30  INFO 2884 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-02T18:04:11.282+06:30  INFO 2884 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179 ms. Found 2 JPA repository interfaces.
+2026-05-02T18:04:12.072+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-02T18:04:12.096+06:30  INFO 2884 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-02T18:04:12.097+06:30  INFO 2884 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-02T18:04:12.221+06:30  INFO 2884 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2420 ms
+2026-05-02T18:04:12.508+06:30  INFO 2884 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-02T18:04:12.583+06:30  INFO 2884 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-02T18:04:13.256+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-02T18:04:13.299+06:30  INFO 2884 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-02T18:04:13.756+06:30  INFO 2884 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33089426
+2026-05-02T18:04:13.759+06:30  INFO 2884 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-02T18:04:13.898+06:30  INFO 2884 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-02T18:04:14.864+06:30  INFO 2884 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-02T18:04:14.937+06:30  INFO 2884 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-02T18:04:15.056+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-02T18:04:16.929+06:30  WARN 2884 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-02T18:04:16.942+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-02T18:04:17.615+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-05-02T18:04:17.616+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7ef9d004]]
+2026-05-02T18:04:17.617+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-05-02T18:04:17.642+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-02T18:04:17.646+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-05-02T18:04:17.761+06:30  INFO 2884 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#74d74701:0/SimpleConnection@1b6bb1bd [delegate=amqp://guest@127.0.0.1:5672/, localPort=65322]
+2026-05-02T18:04:17.815+06:30  INFO 2884 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 8.782 seconds (process running for 9.546)
+2026-05-02T18:04:35.057+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-02T18:04:35.057+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-02T18:04:35.059+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-02T18:04:35.201+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=MYTEL phone=096****43 amount=500
+2026-05-02T18:04:35.363+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=52 messageId=db42b3ae-327e-427a-a1cc-7e3a66c445e2 queue=TOPUP_QUEUE durationMs=43
+2026-05-02T18:04:35.410+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=52 operator=MYTEL messageId=db42b3ae-327e-427a-a1cc-7e3a66c445e2
+2026-05-02T18:04:35.465+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=52 status=SENT_TO_QUEUE
+2026-05-02T18:04:35.590+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=52 operator=MYTEL simId=10 port=2A
+2026-05-02T18:04:35.598+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=52 operator=MYTEL port=2A mobile=09677007443 amount=500
+2026-05-02T18:04:35.600+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_STARTED txId=52 port=2A mobile=****7443 amount=500
+2026-05-02T18:04:35.601+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_REQUEST txId=52 request=*888#
+2026-05-02T18:04:36.311+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=2A | response={"code":5, "reason":"SIM Not Registered", "max-port":32, "port":"4,6,8-10,12,13"}
+2026-05-02T18:04:36.319+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_RESPONSE txId=52 port=2A mobile=****7443 durationMs=717 response=NULL
+2026-05-02T18:04:36.320+06:30  WARN 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_FAILED txId=52 port=2A mobile=****7443 reason=NULL_RESPONSE
+2026-05-02T18:04:36.320+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=52 operator=MYTEL result=FAILED
+2026-05-02T18:04:36.321+06:30  WARN 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_FAILED txnId=52 operator=MYTEL simId=10 reason=USSD_FAILED
+2026-05-02T18:04:36.322+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=52 operator=MYTEL status=FAILED durationMs=828
+2026-05-02T18:04:36.331+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=52 simId=10 port=2A
+2026-05-02T18:04:36.336+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=52 status=FAILED
+2026-05-02T18:04:36.349+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=52 status=FAILED durationMs=939
+2026-05-02T18:05:17.617+06:30  INFO 2884 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-02T18:13:00.570+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-3] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=MYTEL phone=096****43 amount=500
+2026-05-02T18:13:00.593+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-3] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=53 messageId=707df4cb-0b6a-4ea1-882b-44faddb3bc35 queue=TOPUP_QUEUE durationMs=1
+2026-05-02T18:13:00.596+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=53 operator=MYTEL messageId=707df4cb-0b6a-4ea1-882b-44faddb3bc35
+2026-05-02T18:13:00.614+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=53 status=SENT_TO_QUEUE
+2026-05-02T18:13:00.649+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=53 operator=MYTEL simId=10 port=4A
+2026-05-02T18:13:00.650+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=53 operator=MYTEL port=4A mobile=09677007443 amount=500
+2026-05-02T18:13:00.651+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_STARTED txId=53 port=4A mobile=****7443 amount=500
+2026-05-02T18:13:00.654+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_REQUEST txId=53 request=*888#
+2026-05-02T18:13:03.242+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"1. Sell\r\n2. Utility"}
+2026-05-02T18:13:03.251+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_RESPONSE txId=53 port=4A mobile=****7443 durationMs=2594 response=1. Sell
+2. Utility
+2026-05-02T18:13:03.251+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP2_REQUEST txId=53 request=1
+2026-05-02T18:13:04.883+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"1. Reload E-load\r\n2. Transfer E-load\r\n3. Back"}
+2026-05-02T18:13:04.885+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP2_RESPONSE txId=53 port=4A mobile=****7443 durationMs=1634 response=1. Reload E-load
+2. Transfer E-load
+3. Back
+2026-05-02T18:13:04.886+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP3_REQUEST txId=53 request=1
+2026-05-02T18:13:06.544+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"Input ISDN:\r\nPHONENUM (Num 5 - 15)"}
+2026-05-02T18:13:06.546+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP3_RESPONSE txId=53 port=4A mobile=****7443 durationMs=1660 response=Input ISDN:
+PHONENUM (Num 5 - 15)
+2026-05-02T18:13:06.546+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP4_REQUEST txId=53 request=09677007443
+2026-05-02T18:13:08.665+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"Select Amount:\r\n1. 1.000 MMK\r\n2. 2.000 MMK\r\n3. 3.000 MMK\r\n4. 5.000 MMK\r\n5. 10.000 MMK\r\n6. Input money"}
+2026-05-02T18:13:08.666+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP4_RESPONSE txId=53 port=4A mobile=****7443 durationMs=2119 response=Select Amount:
+1. 1.000 MMK
+2. 2.000 MMK
+3. 3.000 MMK
+4. 5.000 MMK
+5. 10.000 MMK
+6. Input money
+2026-05-02T18:13:08.671+06:30 ERROR 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_ERROR txId=53 port=4A mobile=****7443 durationMs=8020 errorType=IllegalArgumentException
+
+java.lang.IllegalArgumentException: Invalid Mytel amount: 500
+	at com.bytebridges.anytop.enums.MytelAmount.fromAmount(MytelAmount.java:29) ~[classes/:na]
+	at com.bytebridges.anytop.service.ussd.MytelTopupUssdService.topup(MytelTopupUssdService.java:118) ~[classes/:na]
+	at com.bytebridges.anytop.service.router.UssdTopupEngine.route(UssdTopupEngine.java:33) ~[classes/:na]
+	at com.bytebridges.anytop.service.EloadTopupService.processTopup(EloadTopupService.java:100) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.6.jar:7.0.6]
+	at com.bytebridges.anytop.service.EloadTopupService$$SpringCGLIB$$0.processTopup(<generated>) ~[classes/:na]
+	at com.bytebridges.anytop.messaging.TopupConsumer.process(TopupConsumer.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:168) ~[spring-messaging-7.0.6.jar:7.0.6]
+	at org.springframework.amqp.rabbit.listener.adapter.KotlinAwareInvocableHandlerMethod.doInvoke(KotlinAwareInvocableHandlerMethod.java:47) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) ~[spring-messaging-7.0.6.jar:7.0.6]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:83) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:287) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:233) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:157) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1683) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1612) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1599) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1590) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListenerAndHandleException(AbstractMessageListenerContainer.java:1539) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1520) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1116) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1061) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.mainLoop(SimpleMessageListenerContainer.java:1465) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1359) ~[spring-rabbit-4.0.2.jar:4.0.2]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-05-02T18:13:08.687+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=53 operator=MYTEL result=FAILED
+2026-05-02T18:13:08.688+06:30  WARN 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_FAILED txnId=53 operator=MYTEL simId=10 reason=USSD_FAILED
+2026-05-02T18:13:08.689+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=53 operator=MYTEL status=FAILED durationMs=8057
+2026-05-02T18:13:08.692+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=53 simId=10 port=4A
+2026-05-02T18:13:08.700+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=53 status=FAILED
+2026-05-02T18:13:08.716+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=53 status=FAILED durationMs=8120
+2026-05-02T18:17:55.713+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-5] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=MYTEL phone=096****43 amount=1000
+2026-05-02T18:17:55.741+06:30  INFO 2884 --- [bb-eload-api] [http-nio-8080-exec-5] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=54 messageId=6b7a26fd-46c1-450d-914e-2fe52ba07a66 queue=TOPUP_QUEUE durationMs=2
+2026-05-02T18:17:55.746+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=54 operator=MYTEL messageId=6b7a26fd-46c1-450d-914e-2fe52ba07a66
+2026-05-02T18:17:55.767+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=54 status=SENT_TO_QUEUE
+2026-05-02T18:17:55.799+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=54 operator=MYTEL simId=10 port=4A
+2026-05-02T18:17:55.799+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=54 operator=MYTEL port=4A mobile=09677007443 amount=1000
+2026-05-02T18:17:55.799+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_STARTED txId=54 port=4A mobile=****7443 amount=1000
+2026-05-02T18:17:55.800+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_REQUEST txId=54 request=*888#
+2026-05-02T18:18:01.243+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"1. Sell\r\n2. Utility"}
+2026-05-02T18:18:01.245+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP1_RESPONSE txId=54 port=4A mobile=****7443 durationMs=5445 response=1. Sell
+2. Utility
+2026-05-02T18:18:01.245+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP2_REQUEST txId=54 request=1
+2026-05-02T18:18:02.663+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"1. Reload E-load\r\n2. Transfer E-load\r\n3. Back"}
+2026-05-02T18:18:02.664+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP2_RESPONSE txId=54 port=4A mobile=****7443 durationMs=1418 response=1. Reload E-load
+2. Transfer E-load
+3. Back
+2026-05-02T18:18:02.665+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP3_REQUEST txId=54 request=1
+2026-05-02T18:18:04.082+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"Input ISDN:\r\nPHONENUM (Num 5 - 15)"}
+2026-05-02T18:18:04.083+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP3_RESPONSE txId=54 port=4A mobile=****7443 durationMs=1418 response=Input ISDN:
+PHONENUM (Num 5 - 15)
+2026-05-02T18:18:04.084+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP4_REQUEST txId=54 request=09677007443
+2026-05-02T18:18:06.662+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"Select Amount:\r\n1. 1.000 MMK\r\n2. 2.000 MMK\r\n3. 3.000 MMK\r\n4. 5.000 MMK\r\n5. 10.000 MMK\r\n6. Input money"}
+2026-05-02T18:18:06.663+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP4_RESPONSE txId=54 port=4A mobile=****7443 durationMs=2579 response=Select Amount:
+1. 1.000 MMK
+2. 2.000 MMK
+3. 3.000 MMK
+4. 5.000 MMK
+5. 10.000 MMK
+6. Input money
+2026-05-02T18:18:06.664+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP5_REQUEST txId=54 request=1
+2026-05-02T18:18:07.842+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"Input Password:"}
+2026-05-02T18:18:07.844+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP5_RESPONSE txId=54 port=4A mobile=****7443 durationMs=1180 response=Input Password:
+2026-05-02T18:18:07.845+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP6_REQUEST txId=54request=123456
+2026-05-02T18:18:09.481+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"Confirm to recharge for: 09677007443, amount: 1000. \r\n1. OK\r\n0. Cancel"}
+2026-05-02T18:18:09.482+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP6_RESPONSE txId=54 port=4A mobile=****7443 durationMs=1636 response=Confirm to recharge for: 09677007443, amount: 1000. 
+1. OK
+0. Cancel
+2026-05-02T18:18:09.483+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP7_REQUEST txId=54 request=1
+2026-05-02T18:18:11.382+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=4A | response={"code":0, "reason":"OK", "resp":"Transaction is successful. Detail information in your mesage. Thanks"}
+2026-05-02T18:18:11.383+06:30 DEBUG 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_STEP7_RESPONSE txId=54 port=4A mobile=****7443 durationMs=1900 response=Transaction is successful. Detail information in your mesage. Thanks
+2026-05-02T18:18:11.384+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.ussd.MytelTopupUssdService       : MYTEL_TOPUP_SUCCESS txId=54 port=4A mobile=****7443 amount=1000 totalDurationMs=15585
+2026-05-02T18:18:11.384+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=54 operator=MYTEL result=SUCCESS
+2026-05-02T18:18:11.385+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_SUCCESS txnId=54 operator=MYTEL simId=10 remainingBalance=99000
+2026-05-02T18:18:11.387+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=54 operator=MYTEL status=SUCCESS durationMs=15599
+2026-05-02T18:18:11.388+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=54 simId=10 port=4A
+2026-05-02T18:18:11.394+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=54 status=SUCCESS
+2026-05-02T18:18:11.419+06:30  INFO 2884 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=54 status=SUCCESS durationMs=15673
+2026-05-02T20:38:36.650+06:30  INFO 8324 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Starting AnyTopApplication using Java 21.0.9 with PID 8324 (C:\apps\projects\AnyTop\anytop-api\target\classes started by KT in C:\apps\projects\AnyTop\anytop-api)
+2026-05-02T20:38:36.655+06:30 DEBUG 8324 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-02T20:38:36.658+06:30  INFO 8324 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-02T20:38:38.098+06:30  INFO 8324 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-02T20:38:38.284+06:30  INFO 8324 --- [bb-eload-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173 ms. Found 2 JPA repository interfaces.
+2026-05-02T20:38:39.169+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-02T20:38:39.194+06:30  INFO 8324 --- [bb-eload-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-02T20:38:39.195+06:30  INFO 8324 --- [bb-eload-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-02T20:38:39.312+06:30  INFO 8324 --- [bb-eload-api] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2563 ms
+2026-05-02T20:38:39.609+06:30  INFO 8324 --- [bb-eload-api] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-02T20:38:39.696+06:30  INFO 8324 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-02T20:38:40.385+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-02T20:38:40.432+06:30  INFO 8324 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-02T20:38:40.893+06:30  INFO 8324 --- [bb-eload-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e3dc24f
+2026-05-02T20:38:40.897+06:30  INFO 8324 --- [bb-eload-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-02T20:38:41.024+06:30  INFO 8324 --- [bb-eload-api] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/anytop_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: anytop_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-02T20:38:42.028+06:30  INFO 8324 --- [bb-eload-api] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-02T20:38:42.104+06:30  INFO 8324 --- [bb-eload-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-02T20:38:42.232+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-02T20:38:44.269+06:30  WARN 8324 --- [bb-eload-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-02T20:38:44.285+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-02T20:38:45.007+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-05-02T20:38:45.009+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7224ab89]]
+2026-05-02T20:38:45.010+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-05-02T20:38:45.038+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-02T20:38:45.043+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-05-02T20:38:45.110+06:30  INFO 8324 --- [bb-eload-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4d424aea:0/SimpleConnection@67c492fc [delegate=amqp://guest@127.0.0.1:5672/, localPort=49547]
+2026-05-02T20:38:45.169+06:30  INFO 8324 --- [bb-eload-api] [main] c.bytebridges.anytop.AnyTopApplication   : Started AnyTopApplication in 9.227 seconds (process running for 9.969)
+2026-05-02T20:39:45.004+06:30  INFO 8324 --- [bb-eload-api] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-02T20:42:47.177+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-02T20:42:47.178+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-02T20:42:47.181+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-02T20:42:47.938+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 437 ms
+2026-05-02T20:43:30.655+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-4] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=u9 phone=099****01 amount=1000
+2026-05-02T20:43:30.863+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-4] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=55 messageId=6a5d96e2-9510-43bc-813e-aae74aa5b663 queue=TOPUP_QUEUE durationMs=13
+2026-05-02T20:43:30.878+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=55 operator=u9 messageId=6a5d96e2-9510-43bc-813e-aae74aa5b663
+2026-05-02T20:43:30.932+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=55 status=SENT_TO_QUEUE
+2026-05-02T20:43:31.201+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=55 operator=u9 simId=9 port=8A
+2026-05-02T20:43:31.215+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=55 operator=u9 port=8A mobile=09979901101 amount=1000
+2026-05-02T20:43:31.216+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.U9TopupUssdService    : U9_TOPUP_STARTED txId=55 port=8A mobile=****1101 amount=1000
+2026-05-02T20:43:31.217+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.U9TopupUssdService    : U9_STEP1_REQUEST txId=55 port=8A mobile=****1101 amount=1000
+2026-05-02T20:43:36.283+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=8A | response={"code":0, "reason":"OK", "resp":"Success. Thank you your transaction is executed successfully. Ref. 825061008"}
+2026-05-02T20:43:36.286+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.U9TopupUssdService    : U9_STEP1_RESPONSE txId=55 port=8A mobile=****1101 durationMs=5069 response=Success. Thank you your transaction is executed successfully. Ref. 825061008
+2026-05-02T20:43:36.287+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.U9TopupUssdService    : U9_TOPUP_SUCCESS txId=55 port=8A mobile=****1101 amount=1000 totalDurationMs=5071
+2026-05-02T20:43:36.287+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=55 operator=u9 result=SUCCESS
+2026-05-02T20:43:36.289+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_SUCCESS txnId=55 operator=u9 simId=9 remainingBalance=99000
+2026-05-02T20:43:36.290+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=55 operator=u9 status=SUCCESS durationMs=5346
+2026-05-02T20:43:36.294+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=55 simId=9 port=8A
+2026-05-02T20:43:36.299+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=55 status=SUCCESS
+2026-05-02T20:43:36.310+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=55 status=SUCCESS durationMs=5432
+2026-05-02T20:54:56.846+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-6] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=u9 phone=097****12 amount=500
+2026-05-02T20:54:56.865+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-6] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=56 messageId=0e131c46-d3cd-4209-8018-2e9220f0579c queue=TOPUP_QUEUE durationMs=1
+2026-05-02T20:54:56.868+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=56 operator=u9 messageId=0e131c46-d3cd-4209-8018-2e9220f0579c
+2026-05-02T20:54:56.876+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=56 status=SENT_TO_QUEUE
+2026-05-02T20:54:56.902+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=56 operator=u9 simId=7 port=6A
+2026-05-02T20:54:56.902+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=56 operator=u9 port=6A mobile=09764022112 amount=500
+2026-05-02T20:54:56.902+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.U9TopupUssdService    : U9_TOPUP_STARTED txId=56 port=6A mobile=****2112 amount=500
+2026-05-02T20:54:56.903+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.U9TopupUssdService    : U9_STEP1_REQUEST txId=56 port=6A mobile=****2112 amount=500
+2026-05-02T20:55:00.689+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=6A | response={"code":0, "reason":"OK", "resp":"Incorrect input."}
+2026-05-02T20:55:00.690+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.U9TopupUssdService    : U9_STEP1_RESPONSE txId=56 port=6A mobile=****2112 durationMs=3787 response=Incorrect input.
+2026-05-02T20:55:00.691+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.U9TopupUssdService    : U9_TOPUP_SUCCESS txId=56 port=6A mobile=****2112 amount=500 totalDurationMs=3789
+2026-05-02T20:55:00.692+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=56 operator=u9 result=SUCCESS
+2026-05-02T20:55:00.693+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_SUCCESS txnId=56 operator=u9 simId=7 remainingBalance=99500
+2026-05-02T20:55:00.694+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=56 operator=u9 status=SUCCESS durationMs=3800
+2026-05-02T20:55:00.697+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=56 simId=7 port=6A
+2026-05-02T20:55:00.706+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=56 status=SUCCESS
+2026-05-02T20:55:00.729+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=56 status=SUCCESS durationMs=3861
+2026-05-02T21:03:16.897+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-9] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=ATOM phone=097****12 amount=500
+2026-05-02T21:03:16.924+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-9] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=57 messageId=a42f8778-8c85-4b69-a952-e1296afd820e queue=TOPUP_QUEUE durationMs=0
+2026-05-02T21:03:16.938+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=57 operator=ATOM messageId=a42f8778-8c85-4b69-a952-e1296afd820e
+2026-05-02T21:03:16.955+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=57 status=SENT_TO_QUEUE
+2026-05-02T21:03:16.980+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=57 operator=ATOM simId=5 port=10A
+2026-05-02T21:03:16.981+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=57 operator=ATOM port=10A mobile=09764022112 amount=500
+2026-05-02T21:03:16.982+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_TOPUP_STARTED txId=57 port=10A mobile=****2112 amount=500
+2026-05-02T21:03:16.982+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP1_REQUEST txId=57 port=10A mobile=****2112
+2026-05-02T21:03:19.626+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=10A | response={"code":0, "reason":"OK", "resp":"Please enter Amount without decimal\r\n\r\n00 Main Menu\r\n0 Back\r\n"}
+2026-05-02T21:03:19.628+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP1_RESPONSE txId=57 port=10A mobile=****2112 durationMs=2646 response=Please enter Amount without decimal
+
+00 Main Menu
+0 Back
+
+2026-05-02T21:03:19.629+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP2_REQUEST txId=57 port=10A mobile=****2112 amount=500
+2026-05-02T21:03:21.505+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=10A | response={"code":0, "reason":"OK", "resp":"Please enter M-Pin\r\n\r\n00 Main Menu\r\n0 Back\r\n"}
+2026-05-02T21:03:21.506+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP2_RESPONSE txId=57 port=10A mobile=****2112 durationMs=1876 response=Please enter M-Pin
+
+00 Main Menu
+0 Back
+
+2026-05-02T21:03:21.507+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP3_REQUEST txId=57 port=10A mobile=****2112
+2026-05-02T21:03:24.347+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=10A | response={"code":0, "reason":"OK", "resp":"Thank you, we are working as fast as possible to fulfill your request. Confirmation SMS coming shortly. Have a great day."}
+2026-05-02T21:03:24.348+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP3_RESPONSE txId=57 port=10A mobile=****2112 durationMs=2841 response=Thank you, we are working as fast as possible to fulfill your request. Confirmation SMS coming shortly. Have a great day.
+2026-05-02T21:03:24.350+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_TOPUP_SUCCESS txId=57 port=10A mobile=****2112 amount=500 totalDurationMs=7369
+2026-05-02T21:03:24.352+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=57 operator=ATOM result=SUCCESS
+2026-05-02T21:03:24.358+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_SUCCESS txnId=57 operator=ATOM simId=5 remainingBalance=99500
+2026-05-02T21:03:24.362+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=57 operator=ATOM status=SUCCESS durationMs=7391
+2026-05-02T21:03:24.370+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=57 simId=5 port=10A
+2026-05-02T21:03:24.382+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=57 status=SUCCESS
+2026-05-02T21:03:24.428+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=57 status=SUCCESS durationMs=7490
+2026-05-02T21:07:05.909+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.service.EloadTopupService     : TOPUP_REQUEST_ACCEPTED operator=ATOM phone=097****12 amount=1000
+2026-05-02T21:07:05.941+06:30  INFO 8324 --- [bb-eload-api] [http-nio-8080-exec-1] c.b.anytop.messaging.TopupProducer       : TOPUP_PRODUCER_SENT txnId=58 messageId=3d5cc20b-7f33-44fe-b5b7-407e445a952d queue=TOPUP_QUEUE durationMs=0
+2026-05-02T21:07:05.943+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_RECEIVED txnId=58 operator=ATOM messageId=3d5cc20b-7f33-44fe-b5b7-407e445a952d
+2026-05-02T21:07:05.954+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_PROCESSING txnId=58 status=SENT_TO_QUEUE
+2026-05-02T21:07:06.005+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_SELECTED txnId=58 operator=ATOM simId=6 port=11C
+2026-05-02T21:07:06.006+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_REQUEST txnId=58 operator=ATOM port=11C mobile=09764022112 amount=1000
+2026-05-02T21:07:06.006+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_TOPUP_STARTED txId=58 port=11C mobile=****2112 amount=1000
+2026-05-02T21:07:06.007+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP1_REQUEST txId=58 port=11C mobile=****2112
+2026-05-02T21:07:08.624+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=11C | response={"code":0, "reason":"OK", "resp":"Please enter Amount without decimal\r\n\r\n00 Main Menu\r\n0 Back\r\n"}
+2026-05-02T21:07:08.626+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP1_RESPONSE txId=58 port=11C mobile=****2112 durationMs=2619 response=Please enter Amount without decimal
+
+00 Main Menu
+0 Back
+
+2026-05-02T21:07:08.626+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP2_REQUEST txId=58 port=11C mobile=****2112 amount=1000
+2026-05-02T21:07:10.264+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=11C | response={"code":0, "reason":"OK", "resp":"Please enter M-Pin\r\n\r\n00 Main Menu\r\n0 Back\r\n"}
+2026-05-02T21:07:10.265+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP2_RESPONSE txId=58 port=11C mobile=****2112 durationMs=1639 response=Please enter M-Pin
+
+00 Main Menu
+0 Back
+
+2026-05-02T21:07:10.266+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP3_REQUEST txId=58 port=11C mobile=****2112
+2026-05-02T21:07:13.324+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.s.external.UssdGatewayClient       : USSD Response | port=11C | response={"code":0, "reason":"OK", "resp":"Thank you, we are working as fast as possible to fulfill your request. Confirmation SMS coming shortly. Have a great day."}
+2026-05-02T21:07:13.325+06:30 DEBUG 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_STEP3_RESPONSE txId=58 port=11C mobile=****2112 durationMs=3058 response=Thank you, we are working as fast as possible to fulfill your request. Confirmation SMS coming shortly. Have a great day.
+2026-05-02T21:07:13.326+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.a.service.ussd.AtomTopupUssdService  : ATOM_TOPUP_SUCCESS txId=58 port=11C mobile=****2112 amount=1000 totalDurationMs=7320
+2026-05-02T21:07:13.326+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_RESPONSE txnId=58 operator=ATOM result=SUCCESS
+2026-05-02T21:07:13.327+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_USSD_SUCCESS txnId=58 operator=ATOM simId=6 remainingBalance=99000
+2026-05-02T21:07:13.328+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_COMPLETED txnId=58 operator=ATOM status=SUCCESS durationMs=7334
+2026-05-02T21:07:13.330+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : ELOAD_SIM_RELEASED txnId=58 simId=6 port=11C
+2026-05-02T21:07:13.336+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.service.EloadTopupService     : TOPUP_TXN_SAVED txnId=58 status=SUCCESS
+2026-05-02T21:07:13.361+06:30  INFO 8324 --- [bb-eload-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.b.anytop.messaging.TopupConsumer       : TOPUP_CONSUMER_COMPLETED txnId=58 status=SUCCESS durationMs=7418

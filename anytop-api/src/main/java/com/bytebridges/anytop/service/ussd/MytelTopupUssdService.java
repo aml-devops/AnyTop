@@ -36,17 +36,18 @@ public class MytelTopupUssdService implements UssdTopupService {
 			// =========================================================
 			// STEP 1 : *888#
 			// =========================================================
+			String step1Request = "*888#";
 
-			log.debug("MYTEL_STEP1_REQUEST txId={} port={} mobile={}", txnId, port, maskedMobile);
+			log.debug("MYTEL_STEP1_REQUEST txId={} request={}", txnId, step1Request);
 
 			long t1 = System.currentTimeMillis();
 
+			//response = call(port, step1Request);
 			response = call(port, "*888#");
 
 			long d1 = System.currentTimeMillis() - t1;
 
-			log.debug("MYTEL_STEP1_RESPONSE txId={} port={} mobile={} durationMs={} response={}", txnId, port,
-					maskedMobile, d1, safeResp(response));
+			log.debug("MYTEL_STEP1_RESPONSE txId={} port={} mobile={} durationMs={} response={}", txnId, port, maskedMobile, d1, safeResp(response));
 
 			if (isInvalid(response)) {
 				return fail(txnId, port, maskedMobile, "STEP1");
@@ -55,12 +56,14 @@ public class MytelTopupUssdService implements UssdTopupService {
 			// =========================================================
 			// STEP 2 : SELL
 			// =========================================================
+			
+			String step2Request = "1";
 
-			log.debug("MYTEL_STEP2_REQUEST txId={} port={} mobile={}", txnId, port, maskedMobile);
+			log.debug("MYTEL_STEP2_REQUEST txId={} request={}", txnId, step2Request);
 
 			long t2 = System.currentTimeMillis();
 
-			response = call(port, "1");
+			response = call(port, step2Request);
 
 			long d2 = System.currentTimeMillis() - t2;
 
@@ -74,18 +77,17 @@ public class MytelTopupUssdService implements UssdTopupService {
 			// =========================================================
 			// STEP 3 : ELOAD
 			// =========================================================
-
-			log.debug("MYTEL_STEP3_REQUEST txId={} port={} mobile={}", txnId, port, maskedMobile);
+			String step3Request = "1";
+			log.debug("MYTEL_STEP3_REQUEST txId={} request={}", txnId, step3Request);
 
 			long t3 = System.currentTimeMillis();
 
-			response = call(port, "1");
+			response = call(port, step3Request);
 
 			long d3 = System.currentTimeMillis() - t3;
 
-			log.debug("MYTEL_STEP3_RESPONSE txId={} port={} mobile={} durationMs={} response={}", txnId, port,
-					maskedMobile, d3, safeResp(response));
-
+			log.debug("MYTEL_STEP3_RESPONSE txId={} port={} mobile={} durationMs={} response={}", txnId, port, maskedMobile, d3, safeResp(response));
+ 
 			if (isInvalid(response)) {
 				return fail(txnId, port, maskedMobile, "STEP3");
 			}
@@ -94,7 +96,7 @@ public class MytelTopupUssdService implements UssdTopupService {
 			// STEP 4 : PHONE
 			// =========================================================
 
-			log.debug("MYTEL_STEP4_REQUEST txId={} port={} mobile={}", txnId, port, maskedMobile);
+			log.debug("MYTEL_STEP4_REQUEST txId={} request={}", txnId, mobile);
 
 			long t4 = System.currentTimeMillis();
 
@@ -115,8 +117,7 @@ public class MytelTopupUssdService implements UssdTopupService {
 
 			String amountCode = MytelAmount.fromAmount(amount);
 
-			log.debug("MYTEL_STEP5_REQUEST txId={} port={} mobile={} amountCode={}", txnId, port, maskedMobile,
-					amountCode);
+			log.debug("MYTEL_STEP5_REQUEST txId={} request={}", txnId, amountCode);
 
 			long t5 = System.currentTimeMillis();
 
@@ -135,7 +136,7 @@ public class MytelTopupUssdService implements UssdTopupService {
 			// STEP 6 : PASSWORD
 			// =========================================================
 
-			log.debug("MYTEL_STEP6_REQUEST txId={} port={} mobile={}", txnId, port, maskedMobile);
+			log.debug("MYTEL_STEP6_REQUEST txId={}request={}", txnId, password);
 
 			long t6 = System.currentTimeMillis();
 
@@ -153,17 +154,16 @@ public class MytelTopupUssdService implements UssdTopupService {
 			// =========================================================
 			// STEP 7 : CONFIRM
 			// =========================================================
-
-			log.debug("MYTEL_STEP7_REQUEST txId={} port={} mobile={}", txnId, port, maskedMobile);
+			String step7Request = "1";
+			log.debug("MYTEL_STEP7_REQUEST txId={} request={}", txnId, step7Request);
 
 			long t7 = System.currentTimeMillis();
 
-			response = call(port, "1");
+			response = call(port, step7Request);
 
 			long d7 = System.currentTimeMillis() - t7;
 
-			log.debug("MYTEL_STEP7_RESPONSE txId={} port={} mobile={} durationMs={} response={}", txnId, port,
-					maskedMobile, d7, safeResp(response));
+			log.debug("MYTEL_STEP7_RESPONSE txId={} port={} mobile={} durationMs={} response={}", txnId, port, maskedMobile, d7, safeResp(response));
 
 			// =========================================================
 			// FINAL RESULT
@@ -173,14 +173,12 @@ public class MytelTopupUssdService implements UssdTopupService {
 
 			if (isSuccess(response)) {
 
-				log.info("MYTEL_TOPUP_SUCCESS txId={} port={} mobile={} amount={} totalDurationMs={}", txnId, port,
-						maskedMobile, amount, totalTime);
+				log.info("MYTEL_TOPUP_SUCCESS txId={} port={} mobile={} amount={} totalDurationMs={}", txnId, port, maskedMobile, amount, totalTime);
 
 				return TxnStatus.SUCCESS;
 			}
 
-			log.warn("MYTEL_TOPUP_FAILED txId={} port={} mobile={} amount={} totalDurationMs={}", txnId, port,
-					maskedMobile, amount, totalTime);
+			log.warn("MYTEL_TOPUP_FAILED txId={} port={} mobile={} amount={} totalDurationMs={}", txnId, port, maskedMobile, amount, totalTime);
 
 			return TxnStatus.FAILED;
 
@@ -188,8 +186,7 @@ public class MytelTopupUssdService implements UssdTopupService {
 
 			long totalTime = System.currentTimeMillis() - startTime;
 
-			log.error("MYTEL_TOPUP_ERROR txId={} port={} mobile={} durationMs={} errorType={}", txnId, port,
-					maskedMobile, totalTime, e.getClass().getSimpleName(), e);
+			log.error("MYTEL_TOPUP_ERROR txId={} port={} mobile={} durationMs={} errorType={}", txnId, port, maskedMobile, totalTime, e.getClass().getSimpleName(), e);
 
 			return TxnStatus.FAILED;
 		}
