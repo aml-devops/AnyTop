@@ -43,7 +43,7 @@ public class MytelTopupUssdService implements UssdTopupService {
 			long t1 = System.currentTimeMillis();
 
 			//response = call(port, step1Request);
-			response = call(port, "*888#");
+			response = call(port, step1Request);
 
 			long d1 = System.currentTimeMillis() - t1;
 

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import com.bytebridges.anytop.dto.TopupMessage;
 import com.bytebridges.anytop.entity.Transaction;
 import com.bytebridges.anytop.repository.TransactionRepository;
-import com.bytebridges.anytop.service.EloadTopupService;
+import com.bytebridges.anytop.service.TransactionService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 public class TopupConsumer {
 
 	private final TransactionRepository txnRepo;
-	private final EloadTopupService eloadTopupService;
+	private final TransactionService transactionService;
 
 	@RabbitListener(queues = "TOPUP_QUEUE")
 	public void process(TopupMessage message) {
@@ -34,10 +34,10 @@ public class TopupConsumer {
 			log.debug("TOPUP_CONSUMER_PROCESSING txnId={} status={}", txn.getId(), txn.getStatus());
 
 			// FAST DB UPDATE
-			eloadTopupService.startProcessing(txn);
+			transactionService.startProcessing(txn);
 
 			// SLOW EXTERNAL PROCESS
-			eloadTopupService.processTopup(txn);
+			transactionService.processTopup(txn);
 
 			long duration = System.currentTimeMillis() - start;
 

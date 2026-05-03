@@ -29,8 +29,8 @@ public class SimCard {
 
     private Boolean isActive;
 
-    private Long balance;           // cached balance
-    private Long reservedBalance;   // locked amount
+    private Integer balance;           // cached balance
+    private Integer reservedBalance;   // locked amount
 
     private LocalDateTime lastUsedAt;
 
