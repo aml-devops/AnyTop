@@ -69,7 +69,7 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
-					<mainClass>com.winner.WinnerApp</mainClass>
+					<mainClass>com.bytebridges.anytop.AnyTopApplication</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
