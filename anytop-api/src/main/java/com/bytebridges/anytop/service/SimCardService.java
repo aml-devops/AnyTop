@@ -5,6 +5,7 @@ import com.bytebridges.anytop.dto.OperatorBalanceDto;
 import com.bytebridges.anytop.dto.OperatorBalanceResponseDto;
 import com.bytebridges.anytop.dto.SimCardResponseDto;
 import com.bytebridges.anytop.entity.SimCard;
+import com.bytebridges.anytop.enums.Operator;
 import com.bytebridges.anytop.projection.SimCardProjection;
 import com.bytebridges.anytop.repository.SimCardRepository;
 import com.bytebridges.anytop.service.ussd.BalanceCallUssdService;
@@ -133,7 +134,7 @@ public class SimCardService {
 
 			try {
 
-				Integer balance = balanceCallUssdService.getBalance(sim.getSimName());
+				Integer balance = getBalance(sim.getSimName());
 
 				sim.setBalance(balance);
 
@@ -161,5 +162,21 @@ public class SimCardService {
 				}
 			}
 		}
+	}
+
+	public Integer getBalance(String operator) {
+
+		return switch (operator.toUpperCase()) {
+
+		case "MPT" -> balanceCallUssdService.getMPTBalance(operator);
+
+		case "ATOM" -> balanceCallUssdService.getAtomBalance(operator);
+
+		case "U9" -> balanceCallUssdService.getU9Balance(operator);
+
+		case "MYTEL" -> balanceCallUssdService.getMytelBalance(operator);
+
+		default -> 0;
+		};
 	}
 }
