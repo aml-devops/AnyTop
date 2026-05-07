@@ -14,8 +14,13 @@ import com.bytebridges.anytop.service.SimCardService;
 public class SimBalanceScheduler {
 	
 	private final SimCardService simCardService;
-
-	@Scheduled(cron = "0 0 * * * *")
+	
+	// second minute hour day month weekday
+	// 0      0      2    *   *     *
+	// One time per hour
+	// @Scheduled(cron = "0 0 * * * *")
+	// To run at 2:00 AM every day
+	@Scheduled(cron = "0 0 2 * * *")
 	public void refreshBalances() {
 
 		log.info("SIM balance refresh started");

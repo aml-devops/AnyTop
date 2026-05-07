@@ -91,4 +91,14 @@ public class AuthController {
 
 		return ServiceResponse.success(response);
 	}
+	
+	@Operation(summary = "User Logout", description = "Logs out the current user")
+	@PostMapping("/logout")
+	public ServiceResponse<?> logout() {
+
+		// JWT is stateless
+		// Client should remove token from storage
+
+		return ServiceResponse.success("Logout successful");
+	}
 }

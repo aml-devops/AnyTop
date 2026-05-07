@@ -134,7 +134,7 @@ public class SimCardService {
 
 			try {
 
-				Integer balance = getBalance(sim.getSimName());
+				Integer balance = getBalance(sim.getOperator());
 
 				sim.setBalance(balance);
 
