@@ -17,6 +17,7 @@ import com.bytebridges.anytop.common.ServiceResponse;
 import com.bytebridges.anytop.dto.TopupRequest;
 import com.bytebridges.anytop.dto.TopupResponseDto;
 import com.bytebridges.anytop.entity.Transaction;
+import com.bytebridges.anytop.service.TelcoService;
 import com.bytebridges.anytop.service.TransactionService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -31,6 +32,13 @@ import lombok.RequiredArgsConstructor;
 public class TransactionController {
 
 	private final TransactionService transactionService;
+	private final TelcoService telcoService;
+
+	@Operation(summary = "Check Mobile Operator", description = "Detects Myanmar mobile operator type from the provided MSISDN number")
+	@GetMapping("/checkTelco")
+	public ServiceResponse<?> checkTelco(@RequestParam String msisdn) {
+		return telcoService.checkTelco(msisdn);
+	}
 
 	@Operation(summary = "Create Topup Transaction", description = "Creates a new mobile topup transaction for the selected operator and phone number")
 	@PostMapping("/topup")
