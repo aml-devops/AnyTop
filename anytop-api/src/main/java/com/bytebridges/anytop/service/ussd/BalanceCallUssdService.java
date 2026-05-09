@@ -32,14 +32,14 @@ public class BalanceCallUssdService {
 
 		if (pre == null || pre.getResp() == null) {
 
-			log.warn("Balance inquiry failed | port={} | reason=NULL_RESPONSE", port);
+			log.warn("Balance inquiry failed port={} reason=NULL_RESPONSE", port);
 
 			return balance;
 		}
 
 		String response = pre.getResp();
 
-		log.debug("MPT raw balance response | port={} | response={}", port, response);
+		log.debug("MPT raw balance response port={} response={}", port, response);
 
 		// Example:
 		// Your main balance is 503 Ks
@@ -57,16 +57,16 @@ public class BalanceCallUssdService {
 
 				balance = Integer.parseInt(balanceText);
 
-				log.info("MPT balance fetched | port={} | balance={} Ks", port, balance);
+				log.info("MPT balance fetched port={} balance={} Ks", port, balance);
 
 			} catch (NumberFormatException e) {
 
-				log.error("Balance conversion failed | port={} | value={}", port, balanceText, e);
+				log.error("Balance conversion failed port={} value={}", port, balanceText, e);
 			}
 
 		} else {
 
-			log.warn("Balance parsing failed | port={} | response={}", port, response);
+			log.warn("Balance parsing failed port={} response={}", port, response);
 		}
 
 		return balance;
@@ -82,14 +82,14 @@ public class BalanceCallUssdService {
 
 		if (pre == null || pre.getResp() == null) {
 
-			log.warn("ATOM balance inquiry failed | port={} | reason=NULL_RESPONSE", port);
+			log.warn("ATOM balance inquiry failed port={} reason=NULL_RESPONSE", port);
 
 			return balance;
 		}
 
 		String response = pre.getResp();
 
-		log.debug("ATOM raw balance response | port={} | response={}", port, response);
+		log.debug("ATOM raw balance response port={} response={}", port, response);
 
 		// Example:
 		// 9790175042 Balance 10007 Ks valid 15/04/2027.
@@ -106,16 +106,16 @@ public class BalanceCallUssdService {
 
 				balance = Integer.parseInt(balanceText);
 
-				log.info("ATOM balance fetched | port={} | balance={} Ks", port, balance);
+				log.info("ATOM balance fetched port={} balance={} Ks", port, balance);
 
 			} catch (NumberFormatException e) {
 
-				log.error("ATOM balance conversion failed | port={} | value={}", port, balanceText, e);
+				log.error("ATOM balance conversion failed port={} value={}", port, balanceText, e);
 			}
 
 		} else {
 
-			log.warn("ATOM balance parsing failed | port={} | response={}", port, response);
+			log.warn("ATOM balance parsing failed port={} response={}", port, response);
 		}
 
 		return balance;
@@ -133,14 +133,14 @@ public class BalanceCallUssdService {
 
 		if (pre == null || pre.getResp() == null) {
 
-			log.warn("U9 balance inquiry failed | port={} | reason=NULL_RESPONSE", port);
+			log.warn("U9 balance inquiry failed port={} reason=NULL_RESPONSE", port);
 
 			return balance;
 		}
 
 		String response = pre.getResp();
 
-		log.debug("U9 raw balance response | port={} | response={}", port, response);
+		log.debug("U9 raw balance response port={} response={}", port, response);
 
 		// Example:
 		// Bal: 2517 Ks, Valid:19/11/2026.
@@ -157,16 +157,16 @@ public class BalanceCallUssdService {
 
 				balance = Integer.parseInt(balanceText);
 
-				log.info("U9 balance fetched | port={} | balance={} Ks", port, balance);
+				log.info("U9 balance fetched port={} balance={} Ks", port, balance);
 
 			} catch (NumberFormatException e) {
 
-				log.error("U9 balance conversion failed | port={} | value={}", port, balanceText, e);
+				log.error("U9 balance conversion failed port={} value={}", port, balanceText, e);
 			}
 
 		} else {
 
-			log.warn("U9 balance parsing failed | port={} | response={}", port, response);
+			log.warn("U9 balance parsing failed port={} response={}", port, response);
 		}
 
 		return balance;
@@ -182,14 +182,14 @@ public class BalanceCallUssdService {
 
 		if (pre == null || pre.getResp() == null) {
 
-			log.warn("MYTEL balance inquiry failed | port={} | reason=NULL_RESPONSE", port);
+			log.warn("MYTEL balance inquiry failed port={} reason=NULL_RESPONSE", port);
 
 			return balance;
 		}
 
 		String response = pre.getResp();
 
-		log.debug("MYTEL raw balance response | port={} | response={}", port, response);
+		log.debug("MYTEL raw balance response port={} response={}", port, response);
 
 		// Example:
 		// 09690577895- 0Ks, exp 04/12/2026.
@@ -206,16 +206,16 @@ public class BalanceCallUssdService {
 
 				balance = Integer.parseInt(balanceText);
 
-				log.info("MYTEL balance fetched | port={} | balance={} Ks", port, balance);
+				log.info("MYTEL balance fetched port={} balance={} Ks", port, balance);
 
 			} catch (NumberFormatException e) {
 
-				log.error("MYTEL balance conversion failed | port={} | value={}", port, balanceText, e);
+				log.error("MYTEL balance conversion failed port={} value={}", port, balanceText, e);
 			}
 
 		} else {
 
-			log.warn("MYTEL balance parsing failed | port={} | response={}", port, response);
+			log.warn("MYTEL balance parsing failed port={} response={}", port, response);
 		}
 
 		return balance;

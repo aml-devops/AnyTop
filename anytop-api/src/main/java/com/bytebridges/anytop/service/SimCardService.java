@@ -1,21 +1,21 @@
 package com.bytebridges.anytop.service;
 
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.bytebridges.anytop.common.ServiceResponse;
 import com.bytebridges.anytop.dto.OperatorBalanceDto;
 import com.bytebridges.anytop.dto.OperatorBalanceResponseDto;
 import com.bytebridges.anytop.dto.SimCardResponseDto;
 import com.bytebridges.anytop.entity.SimCard;
-import com.bytebridges.anytop.enums.Operator;
 import com.bytebridges.anytop.projection.SimCardProjection;
 import com.bytebridges.anytop.repository.SimCardRepository;
 import com.bytebridges.anytop.service.ussd.BalanceCallUssdService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -59,13 +59,13 @@ public class SimCardService {
 			List<SimCardResponseDto> response = results.stream().map(r -> new SimCardResponseDto(r.getId(),
 					r.getOperator(), r.getSimName(), r.getIsActive(), r.getBalance())).toList();
 
-			log.info("SIM cards fetched | operator={} | count={}", operator, response.size());
+			log.info("SIM cards fetched operator={} count={}", operator, response.size());
 
 			return ServiceResponse.success(response, "SIM cards fetched successfully");
 
 		} catch (Exception e) {
 
-			log.error("Failed to fetch SIM cards | operator={}", operator, e);
+			log.error("Failed to fetch SIM cards operator={}", operator, e);
 
 			return ServiceResponse.error(500, "Failed to fetch SIM cards");
 		}
@@ -106,13 +106,13 @@ public class SimCardService {
 				return ServiceResponse.error(404, "SIM not found");
 			}
 
-			log.info("SIM status updated | id={} | isActive={}", id, isActive);
+			log.info("SIM status updated id={} isActive={}", id, isActive);
 
 			return ServiceResponse.success(true, "SIM status updated successfully");
 
 		} catch (Exception e) {
 
-			log.error("Failed to update SIM status | id={}", id, e);
+			log.error("Failed to update SIM status id={}", id, e);
 
 			return ServiceResponse.error(500, "Failed to update SIM status");
 		}
@@ -133,19 +133,20 @@ public class SimCardService {
 		for (SimCard sim : sims) {
 
 			try {
-
-				Integer balance = getBalance(sim.getOperator());
+				
+				log.info("SIM balance request operator={} port={}", sim.getOperator(), sim.getSimName());
+				Integer balance = getBalance(sim.getOperator(), sim.getSimName());
 
 				sim.setBalance(balance);
 
 				simCardRepository.save(sim);
 
-				log.info("SIM balance updated | simId={} | operator={} | port={} | balance={}", sim.getId(),
+				log.info("SIM balance updated simId={} operator={} port={} balance={}", sim.getId(),
 						sim.getOperator(), sim.getSimName(), balance);
 
 			} catch (Exception e) {
 
-				log.error("SIM balance update failed | simId={} | operator={} | port={} | reason={}", sim.getId(),
+				log.error("SIM balance update failed simId={} operator={} port={} reason={}", sim.getId(),
 						sim.getOperator(), sim.getSimName(), e.getMessage(), e);
 
 			} finally {
@@ -164,17 +165,17 @@ public class SimCardService {
 		}
 	}
 
-	public Integer getBalance(String operator) {
+	public Integer getBalance(String operator, String sameName) {
 
 		return switch (operator.toUpperCase()) {
 
-		case "MPT" -> balanceCallUssdService.getMPTBalance(operator);
+		case "MPT" -> balanceCallUssdService.getMPTBalance(sameName);
 
-		case "ATOM" -> balanceCallUssdService.getAtomBalance(operator);
+		case "ATOM" -> balanceCallUssdService.getAtomBalance(sameName);
 
-		case "U9" -> balanceCallUssdService.getU9Balance(operator);
+		case "U9" -> balanceCallUssdService.getU9Balance(sameName);
 
-		case "MYTEL" -> balanceCallUssdService.getMytelBalance(operator);
+		case "MYTEL" -> balanceCallUssdService.getMytelBalance(sameName);
 
 		default -> 0;
 		};
